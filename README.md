@@ -1,2 +1,2 @@
-# zeppelin-website
-https://openzeppelin.org/
+# Zeppelin Website
+The source code for [openzeppelin.org](https://openzeppelin.org/).
