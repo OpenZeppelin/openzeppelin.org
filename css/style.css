@@ -1,0 +1,483 @@
+/* Bootstrap Overrides */
+a {
+  color: #1F8DED;
+}
+.btn-primary {
+  background-color: #1F8DED;
+  border-color: #1271C4;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.btn-primary:focus,
+.btn-primary:hover {
+  background-color: #1271C4;
+}
+.btn-primary:active {
+  background-color: #1F8DED;
+}
+.btn-primary:active:focus {
+  background-color: #1271C4;
+}
+.tbody.collapse.in {
+  color: #8f8f8f;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  color: #2D3F49;
+}
+.navbar-default .navbar-nav > li > a {
+  font-weight: 400;
+}
+.table > thead > tr > th {
+  border-bottom: 2px solid #D4E1E6;
+}
+
+html, body, #container, .thirdPage {
+  font-family: 'Lato', Lucida Grande;
+  font-weight: 300;
+  max-width: 100%;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+/* Footer */
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #eaebec;
+  color: #828282;
+  font-weight: 500;
+  margin: auto;
+  max-width: 500px;
+  margin-top: 50px;
+}
+.footer-mail {
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+  color: #424242;
+  font-weight: 500;
+}
+
+/*Services items*/
+
+div.row.services-items div {
+  text-align: left;
+}
+
+/*Navbar*/
+
+.chat-circle {
+  content: '';
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 100%;
+  background: #93CC93;
+  margin-left: 4px;
+}
+
+.nav-li-hidden {
+  height: 0px!important;
+  width: 0px!important;
+  transition: height 1s; 
+  transition: width 1s;
+  -webkit-transition: height 0s; /* Safari */
+  -webkit-transition: width 0s; /* Safari */
+
+}
+.nav-li-shown {
+  height: 61px!important;
+  width: 164px!important;
+  transition: height 1s; 
+  transition: width 1s;
+  -webkit-transition: height 0s; /* Safari */
+  -webkit-transition: width 0s; /* Safari */
+  
+}
+.nav-btn-li-shown {
+  padding-top: 13px!important;
+}
+.nav-btn-info {
+  background-color: #5cb6e4;
+  border: none;
+  border-radius: 4px;
+  position: relative;
+  color: white!important;
+  padding: 6px 25px;
+  font-size: 14px;
+  height: 32px;
+}
+.nav-btn-info:hover {
+  background-color: #008cdd;
+  
+}
+
+/*NPM INSTALL SIGN*/
+.npm-install {
+  font-size: 12px;
+  font-family: Menlo, Monaco, Lucida Console;
+  line-height: 20px;
+  margin: 0;
+  white-space: pre-wrap;
+  color: white;
+  text-align: left;
+  background-color: black;
+  border-radius:5px;
+  width: 448px;
+  margin: auto;
+  padding: 8px;
+}
+
+/*TERMINAL*/
+.terminal-title {
+  color: black;
+  font-size: 12px;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+  position: absolute;
+  top: 6px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.terminal-section {
+  margin-bottom: 30px;
+  position: relative;
+  height: 400px;
+}
+.expanded-terminal-section {
+  margin-bottom: 30px;
+  position: relative;
+  height: 400px;
+}
+.terminal {
+  border: 0px solid #4a4a4a;
+  border-top-right-radius: 20px; 
+  border-top-left-radius: 20px;  
+  border-bottom-right-radius: 5px; 
+  border-bottom-left-radius: 5px;  
+  width: 448px;
+  height: 340px;
+  position: relative;
+  background: black;
+  margin: auto;
+  position: absolute;
+  top: 0px;
+  
+}
+
+@media (max-width: 960px) { 
+  .terminal-center {
+    transition: top .40s; 
+    -webkit-transition: top .40s; 
+  }
+  .terminal-left {
+  }
+  .terminal-right {
+    top: 360px!important;
+    transition: top .40s!important; 
+    -webkit-transition: top .40s!important; 
+  }
+  .terminal-section {height: 400px;}
+  .expanded-terminal-section {height: 740px!important;}
+}
+@media (min-width: 768px) and (max-width: 991px) { /*Para monitores sm*/
+  #terminal {
+    z-index: 30;
+    top: 0px;
+    left: calc(50% - 224px);
+  }
+  #terminal2 {
+    z-index: 1;
+    top: 0px;
+    left: calc(50% - 224px);
+  }
+}
+@media (max-width: 767px) { /*Para monitores xs*/
+  #terminal {
+    z-index: 30;
+    top: 0px;
+    left: calc(50% - 150px);
+  }
+  #terminal2 {
+    z-index: 1;
+    top: 0px;
+    left: calc(50% - 150px);
+  }
+}
+
+@media (min-width: 960px) { 
+  #terminal {
+    z-index: 30;
+    left: calc(50% - 225px);
+    
+  }
+  #terminal2 {
+    z-index: 1;
+    right: calc(50% - 480px)!important;
+    opacity: 0;
+    -webkit-transition: opacity .40s ease-in!important;
+    transition: opacity .40s ease-in!important;
+  }
+  .terminal-center {
+    transition: left .40s; 
+    -webkit-transition: left .40s; 
+    transition: right .40s; 
+    -webkit-transition: right .40s; 
+  }
+  .terminal-left {
+    left: calc(50% - 480px)!important;
+    transition: left .40s!important; 
+    -webkit-transition: left .40s!important; 
+  }
+  .terminal-right {
+    opacity: 1!important;
+    transition: right .40s!important; 
+    -webkit-transition: right .40s!important; 
+  }
+  
+}
+.top-terminal {
+  z-index: 2;
+  width: calc(100% + 2px);
+  height: 29px;
+  position: absolute;
+  top: -2px;
+  left: -1px;
+  background: #f6f6f6; 
+  border-top-right-radius: 5px; 
+  border-top-left-radius: 5px;  
+  border: solid 0px transparent;
+  border-right: solid 1px white;
+  border-left: solid 1px white; 
+  text-align: left;
+  padding-left: 7px;
+}
+.terminal-control {
+  content: '';
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  border-radius: 100%;
+  margin-left: 5px;
+  margin-top: 9px;
+}
+.red {
+  background-color: #ef3d33;
+}
+.yellow {
+  background-color: #f5b50d;
+}
+.green {
+  background-color: #3ccc02;
+}
+.bottom-terminal {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  position: absolute;
+  overflow: auto;
+}
+.vim-bottom-terminal {
+  background-image: url('../img/vim2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain; 
+}
+.centered {
+  text-align: center;
+}
+.wrap{
+  width: 100%;
+  text-align: left;
+}
+#typed {
+  background-color: black;
+  text-align: left!important;
+}
+.type-wrap{
+  background-color: black;
+  font-size: 12px;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  line-height: 20px;
+  margin: 0;
+  font-weight: 100;
+  white-space: nowrap;
+  color: white;
+  text-align: left;
+  margin-left: 13px;
+  padding-top: 20px;
+}
+.terminal-padding{
+  margin-left: 2px;
+  padding-left: 2px;
+}
+.terminal-padding2{
+  margin-left: 4px;
+  padding-left: 4px;
+}
+.typed-cursor{
+  opacity: 1;
+  color: #A5DEF2;
+  font-weight: bold!important;
+}
+
+.valign-wrapper-logo {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.valign-wrapper-logo .valign {
+  display: block;
+}
+
+@media (max-width: 767px) { /*Para monitores xs*/
+  .terminal {width: 300px!important;}
+  .npm-install {width: 300px!important;}
+  .vim-bottom-terminal {
+    background-image: url('../img/vim-mobile.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain; 
+  }
+  .brand-heading {font-size: 30px!important;}
+  .intro-text {font-size: 17px!important;}
+  #customers h2 {font-size: 22px;}
+  footer p {font-size: 12px;}
+  .footer-col {text-align: center;}
+  ul.nav.navbar-nav li a {font-size: 20px;}
+  .logoRuns {height: 80px!important;}
+  .valign-wrapper-logo {display: inline!important;}
+  .chat-circle {    
+    position: absolute;
+    top: 27px;
+  }
+}
+
+/*zeppelin runs on*/
+.runs-margin {
+  margin-bottom: 20px;
+}
+.logos-runs img {
+/*  max-width: 146px!important;
+  max-height:70px;*/
+}
+.logos-runs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  padding-right: 7%;
+  padding-left: 7%;
+}
+@media (min-width: 992px) and (max-width: 1200px){ /*Para monitores md*/
+  .logos-runs {
+    padding-right: 4%!important;
+    padding-left: 4%!important;
+  }
+}
+@media (max-width: 991px) { /*Para monitores sm y xs*/
+  .logos-runs {
+    padding-right: 0!important;
+    padding-left: 0!important;
+  }
+}
+@media(max-width:768px) {
+  .client-section .logos-runs {
+    padding: 0 10px;
+  }
+
+  .client-section .logos-runs .logoCreators {
+    padding: 0;
+  }
+  .meet-clients h1 {
+    padding-right: 30px;
+    padding-left: 30px;
+    line-height: 20px;
+  }
+}
+.golem {
+  margin-top: 25px;
+}
+.truffle {
+  width: 48%!important;
+}
+.democracy {
+  width: 95%!important;
+}
+.cyberfund {
+  width: 80%!important;
+}
+.rsk {
+  width: 64%!important;
+  margin-top: -22px;
+}
+.scs {
+  width: 55%!important;
+}
+.signatura {
+}
+.arcade{
+  width: 64%!important;
+}
+.firstblood {
+  width: 59%!important;
+}
+.consensys {
+  width: 61%!important;
+}
+.mediachain {
+  width: 90%!important;
+}
+.dg {
+  width: 95%!important;
+}
+.ether {
+  width: 100%!important;
+}
+.vulcanize {
+  width: 42%!important;
+}
+
+.navbar-toggle {
+  margin-right: 28px;
+}
+
+@media (max-width: 767px) { /*Para monitores xs*/
+  .golem {margin-top: 4px;}
+  .rsk {margin-top: 4px;}
+  .signatura {margin-top: 21px;}
+  .firstblood {margin-top: 25px;}
+  .coin {margin-top: 42px;}
+  .wings {margin-top: 5px;}
+  .consensys {margin-top: 15px;}
+  .cyberfund {margin-top: 39px;}
+  .dg {margin-top: 13px;}
+  .ether {margin-top: 20px;}
+  .vulcanize {margin-top: 22px;}
+  .client-width {max-width:350px!important; margin:auto;}
+}
+
+@media (min-width: 768px) { /*Para monitores sm md y lg*/
+  .brand-heading {
+    font-size: 38px!important;
+    margin-bottom: 30px!important;
+  }
+  .intro-text {font-size: 18px!important;}
+}
