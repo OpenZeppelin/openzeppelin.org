@@ -108,7 +108,7 @@
 
         setTimeout(function(){ 
           $("#typed-vim").typed({
-            strings: ['<br>pragma solidity <span style="color: #FC1E70;">^^</span><span style="color: #AF7DFF;">0.4.4</span>;</br><span style="color: #FC1E70;">import</span> <span style="color: #E6DC6D;">"./StandardToken.sol"</span>;</br></br>contract SimpleToken is StandardToken {</br><span class="terminal-padding">  string public name <span style="color: #FC1E70;">=</span> <span style="color: #E6DC6D;">"SimpleToken"</span>; </br></span><span class="terminal-padding">   string public symbol <span style="color: #FC1E70;">=</span><span style="color: #E6DC6D;"> "SIM"</span>;</br></span><span class="terminal-padding"> uint public decimals <span style="color: #FC1E70;">= </span><span style="color: #AF7DFF;">18</span>;</br></span><span class="terminal-padding"> uint public INITIAL_SUPPLY <span style="color: #FC1E70;">= </span><span style="color: #AF7DFF;">10000</span>;</br></span></br><span class="terminal-padding"> <span style="color: #60D9F1;">function</span><span style="color: #9AE407;"> SimpleToken</span>() {</br></span><span class="terminal-padding2">  totalSupply <span style="color: #FC1E70;">=</span> INITIAL_SUPPLY;</br>  </span><span class="terminal-padding2">balances[msg.sender] <span style="color: #FC1E70;">=</span> INITIAL_SUPPLY;</br></span><span class="terminal-padding">   }^500</br>}' ],
+            strings: ['<br>pragma solidity <span style="color: #FC1E70;">^^</span><span style="color: #AF7DFF;">0.4.4</span>;</br><span style="color: #FC1E70;">import</span> <span style="color: #E6DC6D;">"./StandardToken.sol"</span>;</br></br>contract SimpleToken is StandardToken {</br><span class="terminal-padding">  string public name <span style="color: #FC1E70;">=</span> <span style="color: #E6DC6D;">"ExampleToken"</span>; </br></span><span class="terminal-padding">   string public symbol <span style="color: #FC1E70;">=</span><span style="color: #E6DC6D;"> "EGT"</span>;</br></span><span class="terminal-padding"> uint public decimals <span style="color: #FC1E70;">= </span><span style="color: #AF7DFF;">18</span>;</br></span><span class="terminal-padding"> uint public INITIAL_SUPPLY <span style="color: #FC1E70;">= </span><span style="color: #AF7DFF;">10000</span>;</br></span></br><span class="terminal-padding"> <span style="color: #60D9F1;">function</span><span style="color: #9AE407;"> SimpleToken</span>() {</br></span><span class="terminal-padding2">  totalSupply <span style="color: #FC1E70;">=</span> INITIAL_SUPPLY;</br>  </span><span class="terminal-padding2">balances[msg.sender] <span style="color: #FC1E70;">=</span> INITIAL_SUPPLY;</br></span><span class="terminal-padding">   }^500</br>}' ],
             typeSpeed: 0,
             backDelay: 500,
             loop: false,
@@ -122,7 +122,7 @@
         $('.terminal .typed-cursor').css("color", "black");
         setTimeout(function(){ 
           $("#typed3").typed({
-            strings: ['<br>[~]$ truffle console^500</br>> var myToken = ExampleToken.deployed();^500</br>> myToken.totalSupply()' ],
+            strings: ['<br>[~]$ truffle console^500</br>> var myToken = ExampleContract.deployed();^500</br>> myToken.totalSupply()' ],
             typeSpeed: 5,
             backDelay: 500,
             loop: false,
@@ -292,7 +292,7 @@
           <span class="terminal-control red"></span>
           <span class="terminal-control yellow"></span>
           <span class="terminal-control green"></span>
-          <div class="terminal-title" id="vim-title">vim ExampleToken.sol</div>
+          <div class="terminal-title" id="vim-title">vim ExampleContract.sol</div>
         </div>
         <div class="bottom-terminal vim-bottom-terminal" id="terminal-bottom"></div>
       </div>
