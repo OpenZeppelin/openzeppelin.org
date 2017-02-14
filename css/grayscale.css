@@ -238,6 +238,7 @@ ul.nav.navbar-nav li a {
   }
   .logoCreators img{
     width: 80%;
+    max-width: 250px;
   }
   .logoRuns img{
     width: 70%;
