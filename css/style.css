@@ -487,3 +487,7 @@ div.row.services-items div {
   }
   .intro-text {font-size: 18px!important;}
 }
+
+.navbar-header .navbar-brand {
+  padding: 3px;
+}
