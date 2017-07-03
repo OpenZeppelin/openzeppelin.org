@@ -428,8 +428,8 @@ div.row.services-items div {
   width: 64%!important;
   margin-top: -22px;
 }
-.scs {
-  width: 55%!important;
+.zeppelin-solutions {
+  width: 100%!important;
 }
 .signatura {
 }
@@ -477,6 +477,7 @@ div.row.services-items div {
   .storj {margin-top: 11px;}
   .cosmos {margin-top: 60px;}
   .mediachain {margin-top: 8px;}
+  .zeppelin-solutions {margin-top: 20px;}
   .client-width {max-width:350px!important; margin:auto;}
 }
 
