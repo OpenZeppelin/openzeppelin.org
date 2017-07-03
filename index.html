@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Zeppelin is an open-source framework to build secure smart contracts.">
-    <meta name="author" content="Smart Contract Solutions">
+    <meta name="author" content="Zeppelin Solutions">
 
     <!-- Open Graph data -->
     <meta property="og:title" content="Zeppelin" />
@@ -31,31 +31,31 @@
 
     <script>
       $(function(){
-        setTimeout(function(){ 
+        setTimeout(function(){
           $("#typed").typed({
               strings: ['<br>[~]$ npm install zeppelin-solidity' ],
               typeSpeed: 5,
               backDelay: 500,
               loop: false,
-              contentType: 'html', 
+              contentType: 'html',
               loopCount: false,
               callback: function(){ installing(); },
           });
         }, 3000);
       });
 
-      function installing(){ 
+      function installing(){
         $('.terminal .typed-cursor').css("color", "black");
-        setTimeout(function(){ 
-          document.getElementById('installing').innerHTML = '</br> Installing '; 
+        setTimeout(function(){
+          document.getElementById('installing').innerHTML = '</br> Installing ';
         }, 500);
-        setTimeout(function(){ 
+        setTimeout(function(){
           $("#typed-installing").typed({
               strings: ['<span style="color:#ccc"> [==^300===^100==^50==^200===] 100%</span>' ],
               typeSpeed: 5,
               backDelay: 500,
               loop: false,
-              contentType: 'html', 
+              contentType: 'html',
               loopCount: false,
               callback: function(){ fixedText1and2(); },
           });
@@ -65,18 +65,18 @@
           });
         }, 600);
       }
-      function newTyped(){ 
+      function newTyped(){
       }
 
       function fixedText1and2(){
         $('.terminal .typed-cursor').css("color", "black");
-        setTimeout(function(){ 
-          document.getElementById('fixed-text').innerHTML = '</br> > zeppelin-solidity@1.0.0 install'; 
+        setTimeout(function(){
+          document.getElementById('fixed-text').innerHTML = '</br> > zeppelin-solidity@1.0.0 install';
         }, 200);
-        setTimeout(function(){ 
-          document.getElementById('fixed-text2').innerHTML = '</br> > scripts/install.sh</br>'; 
+        setTimeout(function(){
+          document.getElementById('fixed-text2').innerHTML = '</br> > scripts/install.sh</br>';
         }, 400);
-        setTimeout(function(){ 
+        setTimeout(function(){
           $("#typed2").typed({
               strings: ['[~]$ vim ExampleToken.sol^500' ],
               typeSpeed: 5,
@@ -96,37 +96,37 @@
 
       }
 
-      function typeVim(){ 
+      function typeVim(){
         $('#terminal').removeClass('terminal-center');
         $('#terminal-section').removeClass('terminal-section');
         $('#terminal-section').addClass('expanded-terminal-section');
-        $('#terminal').addClass('terminal-left'); 
+        $('#terminal').addClass('terminal-left');
         $('#terminal2').removeClass('terminal-center');
         $('#terminal2').addClass('terminal-right');
 
-        
 
-        setTimeout(function(){ 
+
+        setTimeout(function(){
           $("#typed-vim").typed({
             strings: ['<br>pragma solidity <span style="color: #FC1E70;">^^</span><span style="color: #AF7DFF;">0.4.4</span>;</br><span style="color: #FC1E70;">import</span> <span style="color: #E6DC6D;">"./StandardToken.sol"</span>;</br></br>contract ExampleToken is StandardToken {</br><span class="terminal-padding">  string public name <span style="color: #FC1E70;">=</span> <span style="color: #E6DC6D;">"ExampleToken"</span>; </br></span><span class="terminal-padding">   string public symbol <span style="color: #FC1E70;">=</span><span style="color: #E6DC6D;"> "EGT"</span>;</br></span><span class="terminal-padding"> uint public decimals <span style="color: #FC1E70;">= </span><span style="color: #AF7DFF;">18</span>;</br></span><span class="terminal-padding"> uint public INITIAL_SUPPLY <span style="color: #FC1E70;">= </span><span style="color: #AF7DFF;">10000</span>;</br></span></br><span class="terminal-padding"> <span style="color: #60D9F1;">function</span><span style="color: #9AE407;"> ExampleToken</span>() {</br></span><span class="terminal-padding2">  totalSupply <span style="color: #FC1E70;">=</span> INITIAL_SUPPLY;</br>  </span><span class="terminal-padding2">balances[msg.sender] <span style="color: #FC1E70;">=</span> INITIAL_SUPPLY;</br></span><span class="terminal-padding">   }^500</br>}' ],
             typeSpeed: 0,
             backDelay: 500,
             loop: false,
-            contentType: 'html', 
+            contentType: 'html',
             loopCount: false,
             callback: function(){ typeThree(); },
           });
         },900);
       }
-      function typeThree(){ 
+      function typeThree(){
         $('.terminal .typed-cursor').css("color", "black");
-        setTimeout(function(){ 
+        setTimeout(function(){
           $("#typed3").typed({
             strings: ['<br>[~]$ truffle console^500</br>> var myToken = ExampleToken.deployed();^500</br>> myToken.totalSupply()' ],
             typeSpeed: 5,
             backDelay: 500,
             loop: false,
-            contentType: 'html', 
+            contentType: 'html',
             loopCount: false,
             callback: function(){ fixedText3(); },
           });
@@ -134,10 +134,10 @@
       }
       function fixedText3(){
         $('.terminal .typed-cursor').css("color", "black");
-        setTimeout(function(){ 
-          document.getElementById('fixed-text3').innerHTML = '</br> 10000'; 
+        setTimeout(function(){
+          document.getElementById('fixed-text3').innerHTML = '</br> 10000';
         }, 500);
-        setTimeout(function(){ 
+        setTimeout(function(){
           $("#typed4").typed({
               strings: ['</br>> myToken.transfer(...)' ],
               typeSpeed: 5,
@@ -152,8 +152,8 @@
       }
       function fixedText4(){
         $('.terminal .typed-cursor').css("color", "black");
-        setTimeout(function(){ 
-          document.getElementById('fixed-text4').innerHTML = '</br>true<span style="color: #A5DEF2;">|</span>'; 
+        setTimeout(function(){
+          document.getElementById('fixed-text4').innerHTML = '</br>true<span style="color: #A5DEF2;">|</span>';
         }, 500);
       }
     </script>
@@ -214,7 +214,7 @@
             <li class="hidden">
               <a href="#page-top"></a>
             </li>
-            
+
             <li>
               <a href="https://github.com/OpenZeppelin" target="_blank">Github</a>
             </li>
@@ -225,11 +225,11 @@
               <a href="http://zeppelin-solidity.readthedocs.io/en/latest/index.html" target="_blank">Documentation</a>
             </li>
             <li>
-              <a href="https://smartcontractsolutions.com/security-audits" target="_blank">Security audits</a>
+              <a href="https://zeppelin.solutions/security-audits" target="_blank">Security audits</a>
             </li>
             <li>
-              <a href="https://smartcontractsolutions.com/escrow" target="_blank">Escrow & key management</a>
-            </li>            
+              <a href="https://zeppelin.solutions/escrow" target="_blank">Escrow & key management</a>
+            </li>
             <li>
               <a href="https://slack.openzeppelin.org/" target="_blank" style="position:relative">Chat <span class="chat-circle"></span></a>
             </li>
@@ -247,7 +247,7 @@
         <div class="container">
           <div class="row" id="landing-services-top">
             <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-              <h1 class="brand-heading center"> 
+              <h1 class="brand-heading center">
                 Build Secure Smart Contracts in Solidity
               </h1>
               <p class="intro-text center">OpenZeppelin is an open framework of reusable and secure smart contracts in the Solidity language.</p>
@@ -285,7 +285,7 @@
           <div class="terminal-title" id="bash-title">bash</div>
         </div>
         <div class="bottom-terminal " id="terminal-bottom">
-          
+
         </div>
       </div>
       <div class="terminal terminal-up" id="terminal2">
@@ -327,14 +327,14 @@
       <div class="row">
         <div class="col-xs-12">
           <h1 class="services">Reduce the risk of vulnerabilties in your applications by using standard, tested and community-reviewed code</h1>
-        </div>  
+        </div>
       </div>
       <br/>
       <br/>
 
       <div class="row services-items">
         <div class="col-sm-10 col-sm-offset-1">
-          <div class="row">  
+          <div class="row">
             <div class="col-xs-10 col-sm-4 col-sm-offset-0 col-xs-offset-1 feature-card">
               <img src="./img/lock.svg" alt="Onboard"/>
               <h3>Focused on security</h3>
@@ -429,12 +429,12 @@
         </div>
       </div>
     </section>
-      
+
     <section class="card-section container">
       <div class="row">
         <div class="col-xs-12 col-sm-6">
           <a href="https://slack.openzeppelin.org/" target="_blank">
-            <div class="new-card slack-card valign-wrapper"> 
+            <div class="new-card slack-card valign-wrapper">
               <img src="./img/slack.png" height="100px" class="valign"/>
               <div class="valign">
                 <p class="new-card-title valign-wrapper">Join the slack <i class="fa fa-arrow-right valign" style="left: 122px;" aria-hidden="true"></i></p>
@@ -444,7 +444,7 @@
           </a>
         </div>
         <div class="col-xs-12 col-sm-6">
-          <a href="https://smartcontractsolutions.com/" target="_blank">
+          <a href="https://zeppelin.solutions/" target="_blank">
             <div class="new-card mail-card valign-wrapper">
               <img src="./img/email-cortado.png" height="75px" class="valign"/>
               <div class="valign">
@@ -476,7 +476,7 @@
     <footer>
       <div class="left">
         <span>
-          <span>Copyright</span> © 2017 Smart Contracts Solutions. Inc.
+          <span>Copyright</span> © 2017 Zeppelin Solutions. Inc.
         </span>
       </div>
       <div class="right">
