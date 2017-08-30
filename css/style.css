@@ -378,109 +378,136 @@ div.row.services-items div {
 .runs-margin {
   margin-bottom: 20px;
 }
-.logos-runs img {
-/*  max-width: 146px!important;
-  max-height:70px;*/
-}
-.logos-runs {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-bottom: 20px;
-  padding-right: 7%;
-  padding-left: 7%;
-}
-@media (min-width: 992px) and (max-width: 1200px){ /*Para monitores md*/
-  .logos-runs {
-    padding-right: 4%!important;
-    padding-left: 4%!important;
-  }
-}
-@media (max-width: 991px) { /*Para monitores sm y xs*/
-  .logos-runs {
-    padding-right: 0!important;
-    padding-left: 0!important;
-  }
-}
-@media(max-width:768px) {
-  .client-section .logos-runs {
-    padding: 0 10px;
-  }
 
-  .client-section .logos-runs .logoCreators {
-    padding: 0;
-  }
-  .meet-clients h1 {
-    padding-right: 30px;
-    padding-left: 30px;
-    line-height: 20px;
-  }
+/*clients logos*/
+.client-section {
+  margin: auto;
 }
-.golem {
+.client-section > .container {
+  max-width: 1080px;
+}
+.text-container {
+  margin-top: 26px;
+}
+.raised-container {
   margin-top: 25px;
 }
-.truffle {
-  width: 48%!important;
+.clients-title {
+  font-family: "Helvetica Neue",Lato,Helvetica,Arial,sans-serif;
+  color: rgb(66, 66, 66)!important;
+  font-weight: 600;
+  line-height: 1em;
+  letter-spacing: 1px;
+  margin: 0 0 10px;
+  font-size: 35px;
 }
-.democracy {
-  width: 95%!important;
+.clients-text {
+  font-family: "Helvetica Neue",Lato,Helvetica,Arial,sans-serif;
+  letter-spacing: 0.04em;
+  color: #6f7c82;
+  font-size: 20px!important;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.6;
 }
-.cyberfund {
-  width: 80%!important;
+.clients-img-container {
+  text-align: right;
+  display: inherit!important;
 }
-.rsk {
-  width: 64%!important;
-  margin-top: -22px;
+.clients-mobile-container {
+  display: none!important;
 }
-.zeppelin-solutions {
-  width: 100%!important;
+.clients-img {
+  margin: 10px;
+  width: 170px;
+  height: 50px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
-.signatura {
+.mobile-img {
+  height: 50px;
+  width: 120px;
+  margin: 5px 5px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
-.arcade{
-  width: 64%!important;
+.augur {
+  background-image: url("/img/logos/augur.png");
 }
-.firstblood {
-  width: 59%!important;
+.omise {
+  background-image: url("/img/logos/omisego.svg");
+  position: relative;
+  top: 3px;
+  left: 8px;
 }
-.consensys {
-  width: 61%!important;
+.aragon {
+  background-image: url("/img/logos/Aragon.png");
 }
-.mediachain {
-  width: 90%!important;
+.storj  {
+  background-image: url("/img/logos/storj.png");
 }
-.dg {
-  width: 95%!important;
+.civic {
+  background-image: url("/img/logos/civic.png");
 }
-.ether {
-  width: 100%!important;
-}
-.vulcanize {
-  width: 42%!important;
+.tierion {
+  background-image: url("/img/logos/tierion.png");
 }
 
-.navbar-toggle {
-  margin-right: 28px;
+.clients-img.augur {
+  position: relative;
+  top: 4px;
+}
+.clients-img.omise {
+  height: 42px;
+}
+.clients-img.civic {
+  height: 40px;
+}
+.clients-img.tierion {
+  position: relative;
+  top: -6px;
+  height: 32px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) { /*Para monitores sm*/
+  .text-container {
+    text-align: center!important;
+  }
+  .clients-img-container {
+    text-align: center!important;
+  }
+  .clients-text {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 767px) { /*Para monitores xs*/
-  .golem {margin-top: 4px;}
-  .rsk {margin-top: 4px;}
-  .signatura {margin-top: 21px;}
-  .firstblood {margin-top: 25px;}
-  .coin {margin-top: 42px;}
-  .wings {margin-top: 5px;}
-  .consensys {margin-top: 15px;}
-  .cyberfund {margin-top: 39px;}
-  .dg {margin-top: 13px;}
-  .ether {margin-top: 20px;}
-  .vulcanize {margin-top: 22px;}
-  .brave {margin-top: 15px;}
-  .augur {margin-top: 12px;}
-  .aragon {margin-top: 25px;}
-  .storj {margin-top: 11px;}
-  .cosmos {margin-top: 60px;}
-  .mediachain {margin-top: 8px;}
+  .text-container {
+    text-align: center!important;
+  }
+  .clients-img-container {
+	  display: none!important;
+	}
+	.clients-mobile-container {
+	  text-align: center;
+	  display: inherit!important;
+	}
+  .clients-text {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    font-size: 18px!important;
+  }
+  .clients-title {
+		margin: 0 0 20px;
+    font-size: 25px;
+	}
   .zeppelin-solutions {margin-top: 20px;}
   .client-width {max-width:350px!important; margin:auto;}
 }
@@ -495,4 +522,8 @@ div.row.services-items div {
 
 .navbar-header .navbar-brand {
   padding: 3px;
+}
+
+.navbar-toggle {
+  margin-right: 28px;
 }
