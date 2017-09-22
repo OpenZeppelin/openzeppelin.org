@@ -290,7 +290,6 @@ div.row.services-items div {
   overflow: auto;
 }
 .vim-bottom-terminal {
-  background-image: url('../img/vim2.png');
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: contain;
@@ -352,7 +351,6 @@ div.row.services-items div {
   .terminal {width: 300px!important;}
   .npm-install {width: 300px!important;}
   .vim-bottom-terminal {
-    background-image: url('../img/vim-mobile.png');
     background-repeat: no-repeat;
     background-position: center;
     -webkit-background-size: contain;
