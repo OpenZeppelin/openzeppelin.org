@@ -174,7 +174,9 @@ div.row.services-items div {
   margin: auto;
   position: absolute;
   top: 0px;
-
+}
+.mobile-br {
+  display: none;
 }
 
 @media (max-width: 960px) {
@@ -205,6 +207,12 @@ div.row.services-items div {
   }
 }
 @media (max-width: 767px) { /*Para monitores xs*/
+  .mobile-br {
+    display: inline;
+  }
+  .desktop-br {
+    display: none;
+  }
   #terminal {
     z-index: 30;
     top: 0px;
