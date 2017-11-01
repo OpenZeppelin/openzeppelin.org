@@ -479,6 +479,12 @@ div.row.services-items div {
   height: 32px;
 }
 
+.navbar-header .navbar-brand img {
+  height: 35px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
 @media (min-width: 768px) and (max-width: 991px) { /*Para monitores sm*/
   .text-container {
     text-align: center!important;
@@ -490,6 +496,10 @@ div.row.services-items div {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
+  }
+  .navbar-header .navbar-brand img {
+    height: 30px;
+    margin-top: 6px;
   }
 }
 
@@ -516,6 +526,12 @@ div.row.services-items div {
 	}
   .zeppelin-solutions {margin-top: 20px;}
   .client-width {max-width:350px!important; margin:auto;}
+
+  .navbar-header .navbar-brand img {
+    margin-top: 10px;
+    margin-left: 6px;
+    height: 25px;
+  }
 }
 
 @media (min-width: 768px) { /*Para monitores sm md y lg*/
