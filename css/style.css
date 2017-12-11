@@ -480,8 +480,8 @@ div.row.services-items div {
 }
 
 .navbar-header .navbar-brand img {
-  height: 35px;
-  margin-top: 5px;
+  height: 30px;
+  margin-top: 8px;
   margin-left: 5px;
 }
 
@@ -499,7 +499,7 @@ div.row.services-items div {
   }
   .navbar-header .navbar-brand img {
     height: 30px;
-    margin-top: 6px;
+    margin-top: 8px;
   }
 }
 
