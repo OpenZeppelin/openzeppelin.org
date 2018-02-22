@@ -10,15 +10,17 @@ function main(argv) {
   if(argv.length !== 3) {
     console.error([
       'Missing OpenZeppelin repository tag.',
-      'Usage: npm run soldoc -- <tag>',
-      'Example: npm run soldoc -- v1.7.0'
+      'Usage: npm run bump-docs -- <tag>',
+      'Example: npm run bump-docs -- v1.7.0'
     ].join('\n'))
     process.exit(1)
   }
   const tag = argv[2]
+  const version = tag.slice(1)
   const tempDir = tmp.dirSync().name
   try {
     const repoDir = path.resolve(tempDir, 'zeppelin-solidity')
+    const contractsDir = path.resolve(repoDir, 'contracts')
     const parentDir = path.resolve('..')
     const outputDir = path.resolve('docs')
     const websiteDir = path.resolve(outputDir, 'website')
@@ -27,8 +29,9 @@ function main(argv) {
     handleErrorCode(shell.exec('git clone https://github.com/OpenZeppelin/zeppelin-solidity.git'))
     shell.cd('zeppelin-solidity')
     handleErrorCode(shell.exec(`git checkout -b ${tag} ${tag}`))
-    handleErrorCode(shell.exec(`npx soldoc ${repoDir} ${outputDir} --exclude mocks,examples`))
+    handleErrorCode(shell.exec(`npx soldoc ${repoDir} ${contractsDir} ${outputDir} --exclude mocks,examples`))
     shell.cd(websiteDir)
+    handleErrorCode(shell.exec(`npm run version ${version}`))
     handleErrorCode(shell.exec('npm run build'))
     shell.mv(apiDir, parentDir)
   }

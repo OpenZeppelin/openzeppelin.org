@@ -1,15 +1,12 @@
 {
   "docs": {
-    "INTRODUCTION": [
+    "ABOUT": [
       "open-zeppelin",
       "get-started",
       "next-steps"
     ]
   },
   "docs-api": {
-    "API": [
-      "doc4"
-    ],
     "CROWDSALE": [
       "crowdsale_Crowdsale"
     ],

@@ -1,10 +1,11 @@
 {
   "name": "docgen",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Solidity documentation generation for OpenZeppelin.",
   "main": "index.js",
   "scripts": {
-    "soldoc": "node scripts/soldoc.js",
+    "gen-docs": "node scripts/gen-docs.js",
+    "bump-docs": "node scripts/bump-docs.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -19,6 +20,7 @@
   "license": "MIT",
   "dependencies": {
     "shelljs": "^0.8.1",
+    "soldoc": "^0.1.0",
     "tmp": "0.0.33"
   }
 }

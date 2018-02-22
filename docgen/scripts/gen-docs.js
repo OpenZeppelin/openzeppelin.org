@@ -7,13 +7,23 @@ const tmp = require('tmp')
  * Entry point.
  */
 function main(argv) {
-  shell.mkdir('-p', 'docs')
-  shell.pushd('-q', 'docs')
-  handleErrorCode(shell.exec('npm init -y'))
-  handleErrorCode(shell.exec('npm install docusaurus-init'))
-  handleErrorCode(shell.exec('docusaurus-init'))
-  shell.mv('docs-examples-from-docusaurus/', 'docs')
-  shell.mv('website/blog-examples-from-docusaurus/', 'website/blog')
+  try {
+    shell.mkdir('-p', 'docs')
+    shell.pushd('-q', 'docs')
+    handleErrorCode(shell.exec('npm init -y'))
+    handleErrorCode(shell.exec('npm install docusaurus-init'))
+    handleErrorCode(shell.exec('docusaurus-init'))
+    shell.mv('docs-examples-from-docusaurus/', 'docs')
+    shell.mv('website/blog-examples-from-docusaurus/', 'website/blog')
+    shell.pushd('-q', 'website')
+    handleErrorCode(shell.exec('npm run examples versions'))
+    shell.popd('-q')
+    shell.popd('-q')
+  }
+  catch (err) {
+    shell.rm('-rf', 'docs')
+    throw err
+  }
 }
 
 if (require.main === module) {
