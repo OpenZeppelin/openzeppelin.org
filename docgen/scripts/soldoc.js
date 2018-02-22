@@ -1,3 +1,4 @@
+const handleErrorCode = require('./util').handleErrorCode
 const path = require('path')
 const shell = require('shelljs')
 const tmp = require('tmp')
@@ -18,28 +19,21 @@ function main(argv) {
   const tempDir = tmp.dirSync().name
   try {
     const repoDir = path.resolve(tempDir, 'zeppelin-solidity')
+    const parentDir = path.resolve('..')
     const outputDir = path.resolve('docs')
+    const websiteDir = path.resolve(outputDir, 'website')
+    const apiDir = path.resolve(websiteDir, 'build', 'api')
     shell.cd(tempDir)
     handleErrorCode(shell.exec('git clone https://github.com/OpenZeppelin/zeppelin-solidity.git'))
     shell.cd('zeppelin-solidity')
     handleErrorCode(shell.exec(`git checkout -b ${tag} ${tag}`))
     handleErrorCode(shell.exec(`npx soldoc ${repoDir} ${outputDir} --exclude mocks,examples`))
+    shell.cd(websiteDir)
+    handleErrorCode(shell.exec('npm run build'))
+    shell.mv(apiDir, parentDir)
   }
   finally {
     shell.rm('-rf', tempDir)
-  }
-}
-
-/**
- * Handle any potential error codes returned by a shelljs
- * command execution.
- */
-function handleErrorCode(commandOutput) {
-  if (commandOutput.code !== 0) {
-    throw new Error([
-      `Command line operation failed with code ${commandOutput.code}.`,
-      `Standard error output: ${commandOutput.stderr}`
-    ].join('\n'))
   }
 }
 
