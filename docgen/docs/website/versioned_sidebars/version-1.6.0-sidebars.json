@@ -1,0 +1,76 @@
+{
+  "version-1.6.0-docs": {
+    "INTRODUCTION": [
+      "version-1.6.0-open-zeppelin",
+      "version-1.6.0-get-started",
+      "version-1.6.0-next-steps"
+    ]
+  },
+  "version-1.6.0-docs-api": {
+    "CROWDSALE": [
+      "version-1.6.0-crowdsale_CappedCrowdsale",
+      "version-1.6.0-crowdsale_Crowdsale",
+      "version-1.6.0-crowdsale_FinalizableCrowdsale",
+      "version-1.6.0-crowdsale_RefundVault",
+      "version-1.6.0-crowdsale_RefundableCrowdsale"
+    ],
+    "LIFECYCLE": [
+      "version-1.6.0-lifecycle_Destructible",
+      "version-1.6.0-lifecycle_Migrations",
+      "version-1.6.0-lifecycle_Pausable",
+      "version-1.6.0-lifecycle_TokenDestructible"
+    ],
+    "MATH": [
+      "version-1.6.0-math_Math",
+      "version-1.6.0-math_SafeMath"
+    ],
+    "OWNERSHIP": [
+      "version-1.6.0-ownership_CanReclaimToken",
+      "version-1.6.0-ownership_Claimable",
+      "version-1.6.0-ownership_Contactable",
+      "version-1.6.0-ownership_DelayedClaimable",
+      "version-1.6.0-ownership_HasNoContracts",
+      "version-1.6.0-ownership_HasNoEther",
+      "version-1.6.0-ownership_HasNoTokens",
+      "version-1.6.0-ownership_Heritable",
+      "version-1.6.0-ownership_NoOwner",
+      "version-1.6.0-ownership_Ownable"
+    ],
+    "OWNERSHIP / RBAC": [
+      "version-1.6.0-ownership_rbac_RBAC",
+      "version-1.6.0-ownership_rbac_Roles"
+    ],
+    "PAYMENT": [
+      "version-1.6.0-payment_PullPayment",
+      "version-1.6.0-payment_SplitPayment"
+    ],
+    "TOKEN / ERC20": [
+      "version-1.6.0-token_ERC20_BasicToken",
+      "version-1.6.0-token_ERC20_BurnableToken",
+      "version-1.6.0-token_ERC20_DetailedERC20",
+      "version-1.6.0-token_ERC20_ERC20",
+      "version-1.6.0-token_ERC20_ERC20Basic",
+      "version-1.6.0-token_ERC20_MintableToken",
+      "version-1.6.0-token_ERC20_PausableToken",
+      "version-1.6.0-token_ERC20_SafeERC20",
+      "version-1.6.0-token_ERC20_StandardToken"
+    ],
+    "TOKEN / ERC721": [
+      "version-1.6.0-token_ERC721_ERC721",
+      "version-1.6.0-token_ERC721_ERC721Token"
+    ],
+    "TOKEN / ERC827": [
+      "version-1.6.0-token_ERC827_ERC827",
+      "version-1.6.0-token_ERC827_ERC827Token"
+    ],
+    "UNCATEGORIZED": [
+      "version-1.6.0-Bounty",
+      "version-1.6.0-Bounty_Target",
+      "version-1.6.0-DayLimit",
+      "version-1.6.0-ECRecovery",
+      "version-1.6.0-LimitBalance",
+      "version-1.6.0-MerkleProof",
+      "version-1.6.0-ReentrancyGuard"
+    ]
+  }
+}
