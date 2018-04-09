@@ -1,0 +1,105 @@
+{
+  "version-1.8.0-docs": {
+    "ABOUT": [
+      "version-1.8.0-open-zeppelin",
+      "version-1.8.0-get-started",
+      "version-1.8.0-next-steps"
+    ]
+  },
+  "version-1.8.0-docs-api": {
+    "CROWDSALE": [
+      "version-1.8.0-crowdsale_Crowdsale"
+    ],
+    "CROWDSALE / DISTRIBUTION": [
+      "version-1.8.0-crowdsale_distribution_FinalizableCrowdsale",
+      "version-1.8.0-crowdsale_distribution_PostDeliveryCrowdsale",
+      "version-1.8.0-crowdsale_distribution_RefundableCrowdsale"
+    ],
+    "CROWDSALE / DISTRIBUTION / UTILS": [
+      "version-1.8.0-crowdsale_distribution_utils_RefundVault"
+    ],
+    "CROWDSALE / EMISSION": [
+      "version-1.8.0-crowdsale_emission_AllowanceCrowdsale",
+      "version-1.8.0-crowdsale_emission_MintedCrowdsale"
+    ],
+    "CROWDSALE / PRICE": [
+      "version-1.8.0-crowdsale_price_IncreasingPriceCrowdsale"
+    ],
+    "CROWDSALE / VALIDATION": [
+      "version-1.8.0-crowdsale_validation_CappedCrowdsale",
+      "version-1.8.0-crowdsale_validation_IndividuallyCappedCrowdsale",
+      "version-1.8.0-crowdsale_validation_TimedCrowdsale",
+      "version-1.8.0-crowdsale_validation_WhitelistedCrowdsale"
+    ],
+    "LIFECYCLE": [
+      "version-1.8.0-lifecycle_Destructible",
+      "version-1.8.0-lifecycle_Migrations",
+      "version-1.8.0-lifecycle_Pausable",
+      "version-1.8.0-lifecycle_TokenDestructible"
+    ],
+    "MATH": [
+      "version-1.8.0-math_Math",
+      "version-1.8.0-math_SafeMath"
+    ],
+    "OWNERSHIP": [
+      "version-1.8.0-ownership_CanReclaimToken",
+      "version-1.8.0-ownership_Claimable",
+      "version-1.8.0-ownership_Contactable",
+      "version-1.8.0-ownership_DelayedClaimable",
+      "version-1.8.0-ownership_HasNoContracts",
+      "version-1.8.0-ownership_HasNoEther",
+      "version-1.8.0-ownership_HasNoTokens",
+      "version-1.8.0-ownership_Heritable",
+      "version-1.8.0-ownership_NoOwner",
+      "version-1.8.0-ownership_Ownable",
+      "version-1.8.0-ownership_Whitelist"
+    ],
+    "OWNERSHIP / RBAC": [
+      "version-1.8.0-ownership_rbac_RBAC",
+      "version-1.8.0-ownership_rbac_Roles"
+    ],
+    "PAYMENT": [
+      "version-1.8.0-payment_PullPayment",
+      "version-1.8.0-payment_SplitPayment"
+    ],
+    "TOKEN / ERC20": [
+      "version-1.8.0-token_ERC20_BasicToken",
+      "version-1.8.0-token_ERC20_BurnableToken",
+      "version-1.8.0-token_ERC20_CappedToken",
+      "version-1.8.0-token_ERC20_DetailedERC20",
+      "version-1.8.0-token_ERC20_ERC20",
+      "version-1.8.0-token_ERC20_ERC20Basic",
+      "version-1.8.0-token_ERC20_MintableToken",
+      "version-1.8.0-token_ERC20_PausableToken",
+      "version-1.8.0-token_ERC20_SafeERC20",
+      "version-1.8.0-token_ERC20_StandardToken",
+      "version-1.8.0-token_ERC20_TokenTimelock",
+      "version-1.8.0-token_ERC20_TokenVesting"
+    ],
+    "TOKEN / ERC721": [
+      "version-1.8.0-token_ERC721_DeprecatedERC721",
+      "version-1.8.0-token_ERC721_ERC721",
+      "version-1.8.0-token_ERC721_ERC721Basic",
+      "version-1.8.0-token_ERC721_ERC721BasicToken",
+      "version-1.8.0-token_ERC721_ERC721Holder",
+      "version-1.8.0-token_ERC721_ERC721Receiver",
+      "version-1.8.0-token_ERC721_ERC721Token",
+      "version-1.8.0-token_ERC721_ERC721_ERC721Enumerable",
+      "version-1.8.0-token_ERC721_ERC721_ERC721Metadata"
+    ],
+    "TOKEN / ERC827": [
+      "version-1.8.0-token_ERC827_ERC827",
+      "version-1.8.0-token_ERC827_ERC827Token"
+    ],
+    "UNCATEGORIZED": [
+      "version-1.8.0-AddressUtils",
+      "version-1.8.0-Bounty",
+      "version-1.8.0-Bounty_Target",
+      "version-1.8.0-DayLimit",
+      "version-1.8.0-ECRecovery",
+      "version-1.8.0-LimitBalance",
+      "version-1.8.0-MerkleProof",
+      "version-1.8.0-ReentrancyGuard"
+    ]
+  }
+}
