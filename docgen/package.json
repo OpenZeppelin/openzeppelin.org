@@ -20,7 +20,7 @@
   "license": "MIT",
   "dependencies": {
     "shelljs": "^0.8.1",
-    "soldoc": "^0.1.0",
+    "solidity-docgen": "^0.1.0",
     "tmp": "0.0.33"
   }
 }

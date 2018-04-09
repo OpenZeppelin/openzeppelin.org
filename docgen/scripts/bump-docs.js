@@ -29,7 +29,7 @@ function main(argv) {
     handleErrorCode(shell.exec('git clone https://github.com/OpenZeppelin/zeppelin-solidity.git'))
     shell.cd('zeppelin-solidity')
     handleErrorCode(shell.exec(`git checkout -b ${tag} ${tag}`))
-    handleErrorCode(shell.exec(`npx soldoc ${repoDir} ${contractsDir} ${outputDir} --exclude mocks,examples`))
+    handleErrorCode(shell.exec(`npx solidity-docgen ${repoDir} ${contractsDir} ${outputDir} --exclude mocks,examples`))
     shell.cd(websiteDir)
     handleErrorCode(shell.exec(`npm run version ${version}`))
     handleErrorCode(shell.exec('npm run build'))
