@@ -23,8 +23,8 @@ h5,
 h6 {
   margin: 0 0 35px;
   font-family: Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight: 300;
-  letter-spacing: 1px;
+  font-weight: 400;
+  color: black;
 }
 
 h1 {
@@ -120,7 +120,8 @@ ul.nav.navbar-nav li a {
   outline: 0;
 }
 .navbar-custom .nav li a {
-  font-weight: 300;
+  font-weight: 400;
+  color: black;
 }
 .navbar-custom .nav li.active a {
   background-color: rgba(255,255,255,.3);
@@ -134,7 +135,6 @@ ul.nav.navbar-nav li a {
   .navbar-custom {
     padding: 20px 0;
     border-bottom: 0;
-    letter-spacing: 1px;
     background: white;
     border-bottom: solid transparent 0px;
     -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -365,7 +365,6 @@ font-size: 18px;
 .intro .intro-body .intro-text {
   font-size: 18px;
   font-weight: 300;
-  letter-spacing: 0.03em;
 }
 @media(max-width:768px) {
   .intro {
@@ -378,7 +377,6 @@ font-size: 18px;
 
 @media(min-width:768px) {
   .intro .intro-body .brand-heading {
-    color: #424242;
     font-size: 60px;
   }
 
@@ -393,7 +391,6 @@ font-size: 18px;
   }
 
   .intro .intro-body #landing-services-top .intro-text {
-    color: #424242;
     font-size: 20px;
   }
 }
@@ -522,6 +519,9 @@ font-size: 18px;
 }
 
 
+#about {
+    margin-top: -100px;
+}
 
 #about h2 {
   margin-bottom: 41px;
@@ -532,6 +532,16 @@ font-size: 18px;
   font-size: 23px;
   margin-right: 80px;
   margin-left: 80px;
+  color: #424242;
+}
+
+p.services {
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 23px;
+  margin-right: 80px;
+  margin-left: 80px;
+  font-weight: 400; 
 }
 
 @media(max-width: 768px) {
@@ -870,14 +880,14 @@ ul.banner-social-buttons {
 footer {
   background-color: white;
   padding: 25px 0;
-  color: #666;
-  font-size: 12px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 footer a {
   margin: 25px 25px;
-  color: #666;
-  font-size: 12px;
+  color: #333;
 }
 
 footer a:hover {
@@ -887,7 +897,7 @@ footer a:hover {
 footer p {
   margin: 0;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 footer .svg-icon {
@@ -933,7 +943,6 @@ footer .svg-icon.phone {
   display: block;
   margin-bottom: 40px;
   margin-top: 15px;
-  letter-spacing: 0.04em;
   margin: auto;
   max-width: 360px;
   padding: 15px;
@@ -1005,11 +1014,9 @@ footer .svg-icon.phone {
   margin: auto;
   margin-bottom: 45px;
   border-radius: 4px;
-  letter-spacing: 0.04em;
   font-size: 17px;
 }
 p.explain-icon {
-  letter-spacing: 0.04em;
 }
 .footer.services .icons {
   padding-right: 3px;
@@ -1137,7 +1144,6 @@ body {
 #pricing .pricing-card-inner .pricing-card-name {
   font-size: 16px;
   font-weight: 500;
-  letter-spacing: 0.02em;
   color: #7;
 }
 
@@ -1206,7 +1212,6 @@ body {
   font-weight: 400;
   margin: 0 0 5px;
   color: #637280;
-  letter-spacing: 0.02em;
 }
 
 #faq p {
@@ -1233,7 +1238,6 @@ body {
 
 #card-intro h2 {
   font-size: 18px;
-  letter-spacing: 0.01em;
   font-weight: 300;
   line-height: 26px;
 }
@@ -1349,7 +1353,6 @@ body {
 
 #card-intro h2 {
   font-size: 18px;
-  letter-spacing: 0.01em;
   font-weight: 300;
   line-height: 26px;
 }
@@ -1845,4 +1848,8 @@ div.row.services-items div {
 .new-card .fa-arrow-right {
   padding-left: 3px;
   font-size: 13px;
+}
+
+#zeppelin-logo {
+    margin-left: 10px;
 }
