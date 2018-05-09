@@ -127,7 +127,7 @@ footer .right {
 @media(max-width:660px) {
   .license-li {
     display: block;
-    border-right: 0px;
+    border-right: 1px solid black;
     margin:0px;
     margin-bottom: 10px;
   }
@@ -165,7 +165,7 @@ footer li {
   display: inline-block;
   vertical-align: middle;
   margin-right: 15px;
-  border-right: 1px solid rgb(237, 237, 237);
+  border-right: 1px solid black;
   height: 20px;
   line-height: 20px;
 }
