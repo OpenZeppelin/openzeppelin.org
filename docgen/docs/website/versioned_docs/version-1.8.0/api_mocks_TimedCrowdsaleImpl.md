@@ -1,0 +1,7 @@
+---
+id: version-1.8.0-mocks_TimedCrowdsaleImpl
+title: TimedCrowdsaleImpl
+original_id: mocks_TimedCrowdsaleImpl
+---
+
+<div class="contract-doc"><div class="contract"><h2 class="contract-header"><span class="contract-kind">contract</span> TimedCrowdsaleImpl</h2><p class="base-contracts"><span>is</span> <a href="crowdsale_validation_TimedCrowdsale.html">TimedCrowdsale</a></p><div class="source">Source: <a href="https://github.com/OpenZeppelin/zeppelin-solidity/blob/v1.8.0/contracts/mocks/TimedCrowdsaleImpl.sol" target="_blank">mocks/TimedCrowdsaleImpl.sol</a></div></div><div class="index"><h2>Index</h2><ul><li><a href="mocks_TimedCrowdsaleImpl.html#TimedCrowdsaleImpl">TimedCrowdsaleImpl</a></li></ul></div><div class="reference"><h2>Reference</h2><div class="functions"><h3>Functions</h3><ul><li><div class="item function"><span id="TimedCrowdsaleImpl" class="anchor-marker"></span><h4 class="name">TimedCrowdsaleImpl</h4><div class="body"><code class="signature">function <strong>TimedCrowdsaleImpl</strong><span>(uint256 _openingTime, uint256 _closingTime, uint256 _rate, address _wallet, ERC20 _token) </span><span>public </span></code><hr/><dl><dt><span class="label-modifiers">Modifiers:</span></dt><dd></dd><dt><span class="label-parameters">Parameters:</span></dt><dd><div><code>_openingTime</code> - uint256</div><div><code>_closingTime</code> - uint256</div><div><code>_rate</code> - uint256</div><div><code>_wallet</code> - address</div><div><code>_token</code> - ERC20</div></dd></dl></div></div></li></ul></div></div></div>
