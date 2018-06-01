@@ -549,3 +549,8 @@ div.row.services-items div {
 .navbar-toggle {
   margin-right: 28px;
 }
+
+#tagline {
+    margin-left: 0;
+    margin-right: 0;
+}
