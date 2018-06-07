@@ -479,6 +479,11 @@ div.row.services-items div {
   height: 32px;
 }
 
+.the-navbar {
+    width: 80%;
+    margin-left: 10%;
+}
+
 .navbar-header .navbar-brand img {
   height: 30px;
   margin-top: 8px;
@@ -554,3 +559,4 @@ div.row.services-items div {
     margin-left: 0;
     margin-right: 0;
 }
+
