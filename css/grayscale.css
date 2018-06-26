@@ -878,20 +878,21 @@ ul.banner-social-buttons {
 }
 
 footer {
-  background-color: white;
-  padding: 25px 0;
-  color: #333;
-  font-size: 16px;
+  background-color: #1a1a1a;
+  padding: 2rem 0 !important;
+  color: white;
+  font-size: 1em;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 footer a {
   margin: 25px 25px;
-  color: #333;
+  color: #838383;
 }
 
 footer a:hover {
-  color: #3498db;
+  color: #FFFFFF;
 }
 
 footer p {
@@ -1848,6 +1849,14 @@ div.row.services-items div {
 .new-card .fa-arrow-right {
   padding-left: 3px;
   font-size: 13px;
+}
+
+#zeppelin .team-section {
+    background-color: #1a1a1a;
+    color: #fff;
+    border-top: none;
+    padding-top: 5rem !important;
+    padding-bottom: 6rem;
 }
 
 #zeppelin-logo {
