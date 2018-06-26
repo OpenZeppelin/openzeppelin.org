@@ -309,8 +309,7 @@ font-size: 18px;
   text-align: center;
   color: #424242;
   background: #1e3c72;
-  background: -webkit-linear-gradient(to bottom, #FFFFFF , #FFFFFF);
-  background: linear-gradient(to bottom, #fff , #fff);
+  background: #fafafa;
   position: relative;
   padding-bottom: 30px;
   overflow: hidden;
@@ -419,9 +418,10 @@ font-size: 18px;
 
 .card-section {
   color: #424243;
-  background-color: #F0F6FB;
+  background: linear-gradient(to bottom, #FAFAFA 0%,#FAFAFA 60%, #1a1a1a 60%,#1a1a1a 102%)!important;
   padding-top: 40px !important;
-  padding-bottom: 0;
+  padding-bottom: 40px !important;
+  margin: 0 !important;
 }
 .poe-section {
   color: #424242;
@@ -561,14 +561,13 @@ p.services {
   height: 86px;
 }
 .team-section {
-  background-color: #fafbfc;
-  border: 1px solid #ecf0f2;
+  background-color: #fafafa;
   color: #424242;
   padding-top: 54px !important;
   padding-bottom: 20px;
 }
 .client-section {
-  background: #fafbfc;
+  background: #fafafa;
   border: 1px solid #ecf0f2;
   color: #424242;
   padding-top: 58px !important; padding-bottom: 56px !important;
@@ -1326,7 +1325,6 @@ body {
   width: 270px;
   height: 285px;
   padding: 32px;
-  border-top: 7px solid #024489;
   float: none;
 }
 
@@ -1468,7 +1466,6 @@ ul.nav.navbar-nav li a.login-navbar {
 #contact-page .address {
   max-width: 423px;
   margin: auto;
-  border-top: 1px solid #ccc;
   margin-top: 50px;
   padding-top: 20px;
 }
@@ -1854,7 +1851,6 @@ div.row.services-items div {
 #zeppelin .team-section {
     background-color: #1a1a1a;
     color: #fff;
-    border-top: none;
     padding-top: 5rem !important;
     padding-bottom: 6rem;
 }

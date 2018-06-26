@@ -155,11 +155,13 @@ div.row.services-items div {
   margin-bottom: 30px;
   position: relative;
   height: 400px;
+  background: linear-gradient(to bottom, #FAFAFA 0%,#FAFAFA 65%, #fff 65%,#fff 102%)!important;
 }
 .expanded-terminal-section {
   margin-bottom: 30px;
   position: relative;
   height: 400px;
+  background: linear-gradient(to bottom, #FAFAFA 0%,#FAFAFA 65%, #fff 65%,#fff 102%)!important;
 }
 .terminal {
   border: 0px solid #4a4a4a;
