@@ -1,6 +1,6 @@
 .new-card{
   background:white;
-  width: 85%;
+  width: calc(85% -15px);
   height: 165px;
   display: inline-flex;
   position: relative;
@@ -50,19 +50,27 @@
   .mail-card {margin-right: 0%!important;} 
 }
 .mail-card{
-  margin-right: 15%;
+  margin-right: calc(15% + 15px);
 }
 .slack-card{
-  margin-left: 15%;
+  margin-left: calc(15% + 15px);
 }
 .new-card .new-card-title {
-  color: #2f89df;
-  font-size: 21px;
   font-weight: 400;
   position: relative;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #5aa5ff;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .new-card .new-card-text {
-  color: #898a8a;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.6px;
+  color: #3c3c3c;
 }
 .new-card i {
   height: 33px;
