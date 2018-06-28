@@ -2,31 +2,12 @@
 a {
   color: #1F8DED;
 }
-.btn-primary {
-  background-color: #1F8DED;
-  border-color: #1271C4;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-.btn-primary:focus,
-.btn-primary:hover {
-  background-color: #1271C4;
-}
-.btn-primary:active {
-  background-color: #1F8DED;
-}
-.btn-primary:active:focus {
-  background-color: #1271C4;
-}
 .tbody.collapse.in {
   color: #8f8f8f;
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
   color: #2D3F49;
-}
-.navbar-default .navbar-nav > li > a {
-  font-weight: 400;
 }
 .table > thead > tr > th {
   border-bottom: 2px solid #D4E1E6;
@@ -70,58 +51,6 @@ input:focus::-webkit-input-placeholder {
 
 div.row.services-items div {
   text-align: left;
-}
-
-/*Navbar*/
-
-.chat-circle {
-  content: '';
-  width: 8px;
-  height: 8px;
-  display: inline-block;
-  border-radius: 100%;
-  background: #93CC93;
-  margin-left: 4px;
-}
-
-.nav-li-hidden {
-  height: 0px!important;
-  width: 0px!important;
-  transition: height 1s;
-  transition: width 1s;
-  -webkit-transition: height 0s; /* Safari */
-  -webkit-transition: width 0s; /* Safari */
-
-}
-.nav-li-shown {
-  height: 61px!important;
-  width: 164px!important;
-  transition: height 1s;
-  transition: width 1s;
-  -webkit-transition: height 0s; /* Safari */
-  -webkit-transition: width 0s; /* Safari */
-
-}
-.nav-btn-li-shown {
-  padding-top: 13px!important;
-}
-.nav-btn-info {
-  background-color: #5cb6e4;
-  border: none;
-  border-radius: 4px;
-  position: relative;
-  color: white!important;
-  padding: 6px 25px;
-  font-size: 14px;
-  height: 32px;
-}
-.nav-btn-info:hover {
-  background-color: #008cdd;
-}
-@media (max-width: 960px) and (min-width: 767px) {
-  .nav>li>a {
-    padding: 10px 4px;
-  }
 }
 
 /*NPM INSTALL SIGN*/
@@ -373,13 +302,8 @@ div.row.services-items div {
   #customers h2 {font-size: 22px;}
   footer p {font-size: 12px;}
   .footer-col {text-align: center;}
-  ul.nav.navbar-nav li a {font-size: 20px;}
   .logoRuns {height: 80px!important;}
   .valign-wrapper-logo {display: inline!important;}
-  .chat-circle {
-    position: absolute;
-    top: 27px;
-  }
 }
 
 /*zeppelin runs on*/
@@ -481,16 +405,61 @@ div.row.services-items div {
   height: 32px;
 }
 
-.the-navbar {
-    width: 80%;
-    margin-left: 10%;
+/*Navbar*/
+nav {
+  background: white;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
 }
-
+.chat-circle {
+  content: '';
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 100%;
+  background: #93CC93;
+  margin-left: 4px;
+}
+@media (max-width: 960px) and (min-width: 767px) {
+  .nav>li>a {
+    padding: 10px 4px;
+  }
+}
+.navbar-header .navbar-brand {
+  display: flex; 
+  align-items: center;
+}
 .navbar-header .navbar-brand img {
   height: 30px;
-  margin-top: 8px;
-  margin-left: 5px;
 }
+nav, nav .container-fluid, nav .container-fluid a {
+  height: 70px;
+}
+nav .container-fluid a {
+  display: flex; 
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500!important;
+  color: #1a1a1a;
+}
+@media(max-width:768px) {
+  .navbar-collapse {
+    background: white;
+    width: 100%;
+  }
+  .navbar-collapse a {
+    height: 45px !important;
+  }
+  .chat-circle {
+    position: absolute;
+    top: 19px;
+    left: 47px;
+  }
+  .navbar-header .navbar-brand img {
+    height: 25px;
+  }
+}
+
+
 
 @media (min-width: 768px) and (max-width: 991px) { /*Para monitores sm*/
   .text-container {
@@ -503,10 +472,6 @@ div.row.services-items div {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-  }
-  .navbar-header .navbar-brand img {
-    height: 30px;
-    margin-top: 8px;
   }
 }
 
@@ -533,32 +498,45 @@ div.row.services-items div {
 	}
   .zeppelin-solutions {margin-top: 20px;}
   .client-width {max-width:350px!important; margin:auto;}
+}
 
-  .navbar-header .navbar-brand img {
-    margin-top: 10px;
-    margin-left: 6px;
-    height: 25px;
-  }
+
+/*intro header*/
+.brand-heading {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  letter-spacing: 1.1px;
+}
+.intro .subtitle {
+  font-family: 'Roboto', sans-serif;
+  font-size: 19px;
+  line-height: 1.35;
+  letter-spacing: 0.7px;
+  font-weight: 400;
+  color: black;
 }
 
 @media (min-width: 768px) { /*Para monitores sm md y lg*/
   .brand-heading {
-    font-size: 38px!important;
     margin-bottom: 30px!important;
   }
   .intro-text {font-size: 18px!important;}
 }
 
-.navbar-header .navbar-brand {
-  padding: 3px;
-}
 
-.navbar-toggle {
-  margin-right: 28px;
+/*buttons*/
+.fill-button {
+  font-family: 'Roboto Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-size: 13px;
+  background: black;
+  border: solid 2px black;
+  color: white;
+  padding: 7px 23px;
 }
-
-#tagline {
-    margin-left: 0;
-    margin-right: 0;
+.fill-button:hover {
+  background: transparent;
+  color: black;
 }
 
