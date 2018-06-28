@@ -1,23 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="49px" height="49px" viewBox="0 0 49 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
     <title>modular</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="modular" transform="translate(2.000000, 2.000000)" stroke-width="3" stroke="#0591E2">
-            <g id="Page-1">
-                <g id="modular">
-                    <g id="Page-1">
-                        <g id="noun_111300_cc">
-                            <g id="Group">
-                                <polygon id="Shape" points="19.621 11.673 6.54 11.673 0 23.001 6.54 34.327 19.621 34.327 26.159 23.001"></polygon>
-                                <polygon id="Shape" points="39.462 23.001 46 11.673 39.462 0.345 26.381 0.345 19.841 11.673 26.381 23.001"></polygon>
-                                <polygon id="Shape" points="26.381 23.001 19.841 34.327 26.381 45.655 39.462 45.655 46 34.327 39.462 23.001"></polygon>
-                            </g>
-                        </g>
-                    </g>
-                </g>
+        <g id="OpenZeppelin" transform="translate(-538.000000, -918.000000)" stroke="#000000" stroke-width="2.8">
+            <g id="modular" transform="translate(540.000000, 920.000000)">
+                <polygon id="Shape" points="19.1944565 11.4192391 6.39782609 11.4192391 0 22.5009783 6.39782609 33.5807609 19.1944565 33.5807609 25.5903261 22.5009783"></polygon>
+                <polygon id="Shape" points="38.6041304 22.5009783 45 11.4192391 38.6041304 0.3375 25.8075 0.3375 19.4096739 11.4192391 25.8075 22.5009783"></polygon>
+                <polygon id="Shape" points="25.8075 22.5009783 19.4096739 33.5807609 25.8075 44.6625 38.6041304 44.6625 45 33.5807609 38.6041304 22.5009783"></polygon>
             </g>
         </g>
     </g>

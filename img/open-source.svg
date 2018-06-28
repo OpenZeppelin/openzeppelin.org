@@ -1,17 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="237px" height="231px" viewBox="0 0 237 231" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="49px" viewBox="0 0 50 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
     <title>open-source</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="open-source" transform="translate(7.000000, 7.000000)" stroke-width="13" stroke="#0591E2">
-            <g id="Page-1">
-                <g id="open-source">
-                    <g id="Page-1">
-                        <path d="M222.699,111.414 C222.699,49.948 172.879,0.124 111.413,0.124 C49.948,0.124 0.119,49.948 0.119,111.414 C0.119,158.413 29.256,198.61 70.444,214.925 L98.598,143.787 C85.71,138.683 76.591,126.116 76.591,111.414 C76.591,92.185 92.183,76.597 111.412,76.597 C130.642,76.597 146.234,92.185 146.234,111.414 C146.234,126.116 137.106,138.684 124.227,143.787 L152.373,214.925 C193.57,198.61 222.699,158.413 222.699,111.414 L222.699,111.414 L222.699,111.414 L222.699,111.414 Z" id="Shape"></path>
-                    </g>
-                </g>
+        <g id="OpenZeppelin" transform="translate(-958.000000, -918.000000)" stroke="#000000" stroke-width="2.5">
+            <g id="open-source" transform="translate(960.000000, 920.000000)">
+                <path d="M46.7368305,23.3407891 C46.7368305,10.4638937 36.2813327,0.0259534884 23.3817417,0.0259534884 C10.4823605,0.0259534884 0.024973991,10.4638937 0.024973991,23.3407891 C0.024973991,33.1869025 6.13982422,41.6080225 14.7837632,45.0259535 L20.6923157,30.1228106 C17.9875695,29.0535418 16.0738063,26.4208027 16.0738063,23.3407891 C16.0738063,19.312386 19.3460287,16.0467588 23.3815318,16.0467588 C27.4172448,16.0467588 30.6894673,19.312386 30.6894673,23.3407891 C30.6894673,26.4208027 28.7738152,29.0537513 26.0709578,30.1228106 L31.9778314,45.0259535 C40.6236592,41.6080225 46.7368305,33.1869025 46.7368305,23.3407891 Z" id="Shape"></path>
             </g>
         </g>
     </g>

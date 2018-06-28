@@ -1,9 +1,10 @@
 body {
   width: 100%;
   height: 100%;
-  font-family: Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  color: #292e31;
+  font-family: 'Roboto', sans-serif;
   background-color: #fff;
+  webkit-tap-highlight-color: rgba(255,255,255,.2);
+  padding: 0;
 }
 
 html {
@@ -22,7 +23,7 @@ h4,
 h5,
 h6 {
   margin: 0 0 35px;
-  font-family: Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   color: black;
 }
@@ -46,16 +47,8 @@ p {
   }
 }
 
-@media(max-width:768px) {
-  div.row.services-items div.feature-card {
- text-align:center;
-  }
-}
-
-a:hover,
-a:focus {
+a:hover, a:focus {
   text-decoration: none;
-  color: #292e31;
 }
 
 /* Content section */
@@ -325,40 +318,6 @@ a:focus {
   }
 }
 
-.bignum {
-  margin-bottom: 0;
-  font-size: 45px;
-  height: 86px;
-  color: #024489;
-  padding-top: 6px;
-  font-weight: 300;
-}
-.explain-icon {
-  color: #6f7c82;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-@media(max-width: 768px) {
-  .explain-icon {
-    margin-bottom: 8px;
-  }
-}
-
-.explain-icon-link {
-  color: #3498db;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.detail-poe{
-  color: #11213f;
-  padding-right: 10%;
-  padding-left: 10%;
-  color: #024489;
-  font-size: 19px;
-  font-weight: 300;
-}
 .team-section a {
   color: #11213f;
 }
@@ -397,22 +356,6 @@ a:focus {
 }
 
 
-#about {
-    margin-top: -100px;
-}
-
-#about h2 {
-  margin-bottom: 41px;
-}
-#about h1.services {
-  text-align: center;
-  margin-bottom: 16px;
-  font-size: 23px;
-  margin-right: 80px;
-  margin-left: 80px;
-  color: #424242;
-}
-
 p.services {
   text-align: center;
   margin-bottom: 16px;
@@ -422,22 +365,6 @@ p.services {
   font-weight: 400; 
 }
 
-@media(max-width: 768px) {
-  #about h1.services {
-  margin-right: 0px;
-  margin-left: 0px;
-  }
-}
-
-
-#about h2.services {
-  font-size: 20px;
-  margin-bottom: 21px;
-}
-.canadaflag {
-  margin-bottom: 0;
-  height: 86px;
-}
 .team-section {
   background-color: #fafafa;
   color: #424242;
@@ -570,155 +497,6 @@ ul.banner-social-buttons {
     padding-right: 100px;
     padding-left: 100px;
   }
-}
-
-.card {
-  background: #FFFFFF;
-  border-radius: 4px;
-  box-shadow: 0px 2px 5px rgba(0,0,0,0.06);
-  color: #637280;
-  display: block;
-  margin-bottom: 40px;
-  margin-top: 15px;
-  margin: auto;
-  max-width: 360px;
-  padding: 15px;
-  transition: none;
-  padding-right: 25px;
-  padding-left: 25px;
-}
-.card:hover {
-  color: #5b5b5b;
-
-  box-shadow: 0px 2px 7px rgba(0,0,0,0.17);
-  -webkit-transition: all 125ms ease-in-out;
-  transition: all 125ms ease-in-out;
-}
-
-.card-supercontainer {
-  padding-left: 7%;
-  padding-right: 7%;
-}
-.card-container {
-  padding-left: 1.5%;
-  padding-right: 1.5%;
-  margin-bottom: 50px;
-}
-
-.card-check {
-  text-align: center;
-  margin-top: 8px;
-  margin-bottom: 15px;
-}
-.card-check span {
-  background-color: #3498db;
-  border-radius: 100px;
-  width: 40px;
-  color: white;
-
-  height: 40px;
-  font-size: 20px;
-  padding-top: 9px;
-}
-
-.card-title {
-  text-transform: uppercase;
-  color: #024489;
-  font-size: 17px;
-  font-weight: 600;
-}
-.card-text {
-  margin-top: 15px;
-  margin-bottom: 20px;
-  font-size: 16px;
-  line-height: 1.6;
-}
-.card-cta {
-  text-transform: uppercase;
-  color: #3498db;
-  font-size: 16px;
-  position: absolute;
-  bottom: 30px;
-  cursor: pointer;
-  display: block;
-}
-.card-banner {
-  padding-right: 20px;
-  padding-left: 20px;
-  color: #464646 ;
-  background-color: #F0F6FB ;
-  max-width: 400px;
-  margin: auto;
-  margin-bottom: 45px;
-  border-radius: 4px;
-  font-size: 17px;
-}
-p.explain-icon {
-}
-.footer.services .icons {
-  padding-right: 3px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-.footer.services i.fa {
-  font-size: 23px;
-  color: rgba(49, 49, 49, 0.5);
-}
-
-.countries-section {
-  background: #F8F8F8;
-  color: #424242;
-  padding-bottom: 30px;
-
-}
-.countries-section h1 {
-  text-align: center;
-  margin-bottom: 16px;
-}
-.countries-section h2 {
-  font-size: 20px;
-}
-.countries-section .countries {
-  margin: auto;
-  text-align: center;
-}
-.countries-section .country {
-  display: inline-block;
-  width: 150px;
-  padding: 13px;
-  text-align: center;
-  vertical-align: top;
-}
-.countries-section .country .flag {
-
-}
-.countries-section .country .flag img {
-  width: 60px;
-  border: 1px solid #cacaca;
-}
-.countries-section .country .name {
-  margin-top: 5px;
-  display: inline-block;
-}
-.countries-section .country .label {
-  border: 1px solid #bababa;
-  color: #bababa;
-  text-transform: uppercase;
-}
-.countries-section .request a {
-  font-size: 15px;
-  color: #3498db;
-}
-.countries-section .request {
-  margin-bottom: 15px;
-}
-.countries-section .banner p {
-  margin-top: 8px;
-  font-size: 15px;
-}
-body {
-  webkit-tap-highlight-color: rgba(255,255,255,.2);
-  padding: 0;
 }
 
 #pricing {

@@ -69,234 +69,7 @@ div.row.services-items div {
   padding: 8px;
 }
 
-/*TERMINAL*/
-.terminal-title {
-  color: black;
-  font-size: 12px;
-  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-  position: absolute;
-  top: 6px;
-  left: 0;
-  right: 0;
-  text-align: center;
-}
-.terminal-section {
-  margin-bottom: 30px;
-  position: relative;
-  height: 400px;
-  background: linear-gradient(to bottom, #FAFAFA 0%,#FAFAFA 65%, #fff 65%,#fff 102%)!important;
-}
-.expanded-terminal-section {
-  margin-bottom: 30px;
-  position: relative;
-  height: 400px;
-  background: linear-gradient(to bottom, #FAFAFA 0%,#FAFAFA 65%, #fff 65%,#fff 102%)!important;
-}
-.terminal {
-  border: 0px solid #4a4a4a;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  width: 448px;
-  height: 340px;
-  position: relative;
-  background: black;
-  margin: auto;
-  position: absolute;
-  top: 0px;
-}
-.mobile-br {
-  display: none;
-}
-
-@media (max-width: 960px) {
-  .terminal-center {
-    transition: top .40s;
-    -webkit-transition: top .40s;
-  }
-  .terminal-left {
-  }
-  .terminal-right {
-    top: 360px!important;
-    transition: top .40s!important;
-    -webkit-transition: top .40s!important;
-  }
-  .terminal-section {height: 400px;}
-  .expanded-terminal-section {height: 740px!important;}
-}
-@media (min-width: 768px) and (max-width: 991px) { /*Para monitores sm*/
-  #terminal {
-    z-index: 30;
-    top: 0px;
-    left: calc(50% - 224px);
-  }
-  #terminal2 {
-    z-index: 1;
-    top: 0px;
-    left: calc(50% - 224px);
-  }
-}
 @media (max-width: 767px) { /*Para monitores xs*/
-  .mobile-br {
-    display: inline;
-  }
-  .desktop-br {
-    display: none;
-  }
-  #terminal {
-    z-index: 30;
-    top: 0px;
-    left: calc(50% - 150px);
-  }
-  #terminal2 {
-    z-index: 1;
-    top: 0px;
-    left: calc(50% - 150px);
-  }
-}
-
-@media (min-width: 960px) {
-  #terminal {
-    z-index: 30;
-    left: calc(50% - 225px);
-
-  }
-  #terminal2 {
-    z-index: 1;
-    right: calc(50% - 480px)!important;
-    opacity: 0;
-    -webkit-transition: opacity .40s ease-in!important;
-    transition: opacity .40s ease-in!important;
-  }
-  .terminal-center {
-    transition: left .40s;
-    -webkit-transition: left .40s;
-    transition: right .40s;
-    -webkit-transition: right .40s;
-  }
-  .terminal-left {
-    left: calc(50% - 480px)!important;
-    transition: left .40s!important;
-    -webkit-transition: left .40s!important;
-  }
-  .terminal-right {
-    opacity: 1!important;
-    transition: right .40s!important;
-    -webkit-transition: right .40s!important;
-  }
-
-}
-.top-terminal {
-  z-index: 2;
-  width: calc(100% + 2px);
-  height: 29px;
-  position: absolute;
-  top: -2px;
-  left: -1px;
-  background: #f6f6f6;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-  border: solid 0px transparent;
-  border-right: solid 1px white;
-  border-left: solid 1px white;
-  text-align: left;
-  padding-left: 7px;
-}
-.terminal-control {
-  content: '';
-  width: 12px;
-  height: 12px;
-  display: inline-block;
-  border-radius: 100%;
-  margin-left: 5px;
-  margin-top: 9px;
-}
-.red {
-  background-color: #ef3d33;
-}
-.yellow {
-  background-color: #f5b50d;
-}
-.green {
-  background-color: #3ccc02;
-}
-.bottom-terminal {
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-  position: absolute;
-  overflow: auto;
-}
-.vim-bottom-terminal {
-  background-repeat: no-repeat;
-  background-position: center;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
-}
-.centered {
-  text-align: center;
-}
-.wrap{
-  width: 100%;
-  text-align: left;
-}
-#typed {
-  background-color: black;
-  text-align: left!important;
-}
-.type-wrap{
-  background-color: black;
-  font-size: 12px;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-  line-height: 20px;
-  margin: 0;
-  font-weight: 100;
-  white-space: nowrap;
-  color: white;
-  text-align: left;
-  margin-left: 13px;
-  padding-top: 20px;
-}
-.terminal-padding{
-  margin-left: 2px;
-  padding-left: 2px;
-}
-.terminal-padding2{
-  margin-left: 4px;
-  padding-left: 4px;
-}
-.typed-cursor{
-  opacity: 1;
-  color: #A5DEF2;
-  font-weight: bold!important;
-}
-
-.valign-wrapper-logo {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-.valign-wrapper-logo .valign {
-  display: block;
-}
-
-@media (max-width: 767px) { /*Para monitores xs*/
-  .terminal {width: 300px!important;}
-  .npm-install {width: 300px!important;}
-  .vim-bottom-terminal {
-    background-repeat: no-repeat;
-    background-position: center;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
-  }
   .brand-heading {font-size: 30px!important;}
   .intro-text {font-size: 17px!important;}
   #customers h2 {font-size: 22px;}
@@ -304,11 +77,6 @@ div.row.services-items div {
   .footer-col {text-align: center;}
   .logoRuns {height: 80px!important;}
   .valign-wrapper-logo {display: inline!important;}
-}
-
-/*zeppelin runs on*/
-.runs-margin {
-  margin-bottom: 20px;
 }
 
 /*clients logos*/
@@ -515,7 +283,7 @@ nav .container-fluid a {
   letter-spacing: 0.7px;
   font-weight: 400;
   color: black;
-  max-width: 800px;
+  max-width: 639px;
   margin: auto;
 }
 
@@ -630,4 +398,59 @@ footer li {
 }
 .bottom-li {
   border-right: solid 0px transparent; 
+}
+
+
+/*about*/
+#about {
+  padding: 0 0 100px 0;
+}
+
+#about h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #1a1a1a;
+  max-width: 639px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+#about h3 {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  margin: 22px 0 15px;
+}
+
+#about h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.33;
+  letter-spacing: 0.6px;
+  color: #1a1a1a;
+  min-height: 37px;
+}
+
+#about p {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  color: #5aa5ff;
+  text-transform: uppercase;
+}
+
+@media(max-width:768px) {
+  #about .feature-card {
+    text-align:center;
+    padding: 0;
+  }
+}
+
+#about .feature-card {
+  padding-right: 57px;
 }
