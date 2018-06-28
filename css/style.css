@@ -504,16 +504,19 @@ nav .container-fluid a {
 /*intro header*/
 .brand-heading {
   font-family: 'Roboto', sans-serif;
-  font-size: 30px;
+  font-size: 28px;
   letter-spacing: 1.1px;
+  margin-top: 40px;
 }
 .intro .subtitle {
   font-family: 'Roboto', sans-serif;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 1.35;
   letter-spacing: 0.7px;
   font-weight: 400;
   color: black;
+  max-width: 800px;
+  margin: auto;
 }
 
 @media (min-width: 768px) { /*Para monitores sm md y lg*/
@@ -525,7 +528,13 @@ nav .container-fluid a {
 
 
 /*buttons*/
-.fill-button {
+.buttons-div {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fill-button, .empty-button:hover {
   font-family: 'Roboto Mono', monospace;
   text-transform: uppercase;
   letter-spacing: 1.2px;
@@ -534,9 +543,91 @@ nav .container-fluid a {
   border: solid 2px black;
   color: white;
   padding: 7px 23px;
+  margin: 0 10px;
 }
-.fill-button:hover {
+.fill-button:hover, .empty-button {
   background: transparent;
   color: black;
+  font-family: 'Roboto Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-size: 13px;
+  border: solid 2px black;
+  padding: 7px 23px;
+  margin: 0 10px;
 }
 
+/*prefooter*/
+.pre-footer .content-section {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding-top: 5rem !important;
+  padding-bottom: 6rem;
+}
+.pre-footer p {
+  line-height: 25px;
+  letter-spacing: 1.2px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*footer*/
+footer {
+  font-family: 'Roboto', sans-serif;
+  background-color: #1a1a1a;
+  padding: 2rem 0 !important;
+  color: white;
+  font-size: 1em;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 28px 20px 25px 20px;
+  margin: auto;
+  border-top: solid 1px #ffffff60;
+}
+
+footer a {
+  margin: 25px 25px;
+  color: #ffffff;
+  opacity: 0.6;
+  margin-right: 15px!important;
+  margin-left: 0px!important;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+footer a:hover {
+  color: white;
+}
+
+@media(max-width:660px) {
+  .license-li {
+    display: block;
+    border-right: 2px solid #ffffff;
+    margin:0px;
+    margin-bottom: 10px;
+    opacity: 0.6;
+  }
+  .license-li a {
+    margin: 0px!important;
+  }
+  footer a, .bottom-li {
+    font-size: 12px;
+    margin: 0 !important;
+  }
+  
+  footer ul {
+    padding: 0px!important;
+  }
+}
+
+footer li {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+  border-right: 2px solid #ffffff40;
+  height: 20px;
+  line-height: 20px;
+}
+.bottom-li {
+  border-right: solid 0px transparent; 
+}

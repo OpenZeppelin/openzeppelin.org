@@ -161,21 +161,8 @@ a:focus {
   max-width: 300px;
 }
 
-.calltoaction {
-  margin-top: 35px;
-}
-
-.calltoaction-pricing .cta.btn-info {
-font-size: 18px;
-  margin-top: 50px;
-}
 
 @media(max-width:768px) {
-  .calltoaction {
-    display: block;
-    margin-top: 41px;
-    margin-left: 0px;
-  }
   .container.content-section.screen-section p {
     text-align: center;
   }
@@ -504,12 +491,6 @@ p.services {
 .boxed-icon {
   margin-bottom: 30px;
 }
-
-@media(max-width: 768px) {
-  .calltoaction {
-    text-align: center;
-  }
-}
 .circlepic {
   border-radius: 100px;
   margin-bottom: 15px;
@@ -571,47 +552,8 @@ ul.banner-social-buttons {
   }
 }
 
-footer {
-  background-color: #1a1a1a;
-  padding: 2rem 0 !important;
-  color: white;
-  font-size: 1em;
-  font-weight: 400;
-  text-transform: uppercase;
-}
 
-footer a {
-  margin: 25px 25px;
-  color: #838383;
-}
 
-footer a:hover {
-  color: #FFFFFF;
-}
-
-footer p {
-  margin: 0;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-footer .svg-icon {
-  width: 19px;
-  position: relative;
-  top: 0px;
-}
-
-footer .svg-icon.phone {
-  width: 24px;
-  top: 0px;
-  left: 6px;
-}
-
-::-moz-selection {
-  text-shadow: none;
-  background: #fcfcfc;
-  background: rgba(255,255,255,.2);
-}
 
 #landing-header-top {
   padding-top: 30px!important;
@@ -1391,34 +1333,6 @@ ul.nav.navbar-nav li a.login-navbar {
   padding-bottom: 20px;
 }
 
-@media(max-width:767px) {
-  #howit {
-    padding-top: 80px !important;
-  }
-  #howit h1 {
-    padding-right: 0;
-  }
-  #howit .ninetyWidth {
-    width: 100%;
-  }
-  #howit h2 {
-    padding: 0;
-  }
-
-  #howit .how {
-    margin-top: 80px;
-  }
-  .screen-section {
-    padding-top: 20px;
-  }
-  .screen-section ol {
-    padding-bottom: 13px;
-  }
-  .screen-section h1 {
-    text-align: center;
-  }
-}
-
 #hire-people {
   background-color: #FFFFFF;
 }
@@ -1508,15 +1422,4 @@ div.row.services-items div {
 .new-card .fa-arrow-right {
   padding-left: 3px;
   font-size: 13px;
-}
-
-#zeppelin .team-section {
-    background-color: #1a1a1a;
-    color: #fff;
-    padding-top: 5rem !important;
-    padding-bottom: 6rem;
-}
-
-#zeppelin-logo {
-    margin-left: 10px;
 }
