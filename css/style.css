@@ -226,7 +226,7 @@ nav .container-fluid a {
     left: 47px;
   }
   .navbar-header .navbar-brand img {
-    height: 25px;
+    height: 2rem;
   }
 }
 
@@ -301,6 +301,11 @@ nav .container-fluid a {
   .intro-text {font-size: 18px!important;}
 }
 
+@media (max-width: 768px) {
+  .intro .subtitle {
+    max-width: 100%;
+  }
+}
 
 /*buttons*/
 .buttons-div {
@@ -309,30 +314,56 @@ nav .container-fluid a {
   align-items: center;
   justify-content: center;
 }
-.fill-button, .empty-button:hover {
+.fill-button {
   font-family: 'Roboto Mono', monospace;
   text-transform: uppercase;
   letter-spacing: 1.2px;
   font-size: 1em;
   font-weight: bold;
-  background: #1a1a1a;
-  border: solid 1px #1a1a1a;
+  background: #5aa5ff;
+  border: solid 1.5px #5aa5ff;
   color: white;
+  padding: 1rem 3rem;
+  margin: 0 10px;
+}
+
+.fill-button:hover {
+  font-family: 'Roboto Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-size: 1em;
+  font-weight: bold;
+  border: solid 1.5px #166ed8;
+  background: #166ed8;
+  color: white;
+  padding: 1rem 3rem;
+  margin: 0 10px;
+}
+
+.empty-button {
+  font-family: 'Roboto Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-size: 1em;
+  font-weight: bold;
+  border: solid 1.5px #5aa5ff;
+  color: #5aa5ff;
   padding: 1rem 2rem;
   margin: 0 10px;
 }
 
-.fill-button:hover, .empty-button {
+.empty-button:hover {
   font-family: 'Roboto Mono', monospace;
   text-transform: uppercase;
   letter-spacing: 1.2px;
   font-size: 1em;
   font-weight: bold;
-  border: solid 1.5px #1a1a1a;
-  color: #1a1a1a;
+  border: solid 1.5px #166ed8;
+  color: #166ed8;
   padding: 1rem 2rem;
   margin: 0 10px;
 }
+
 
 /*prefooter*/
 .pre-footer .content-section {
@@ -493,9 +524,9 @@ footer li {
 }
 .logos-section .title-box h1 {
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.5px;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 0.7px;
   text-align: center;
   color: #979797;
 
