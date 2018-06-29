@@ -411,6 +411,7 @@ footer a {
 
 footer a:hover {
   color: white;
+  opacity: 0.9;
 }
 
 @media(max-width:660px) {
