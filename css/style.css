@@ -84,6 +84,9 @@ div.row.services-items div {
 
 /*clients logos*/
 .client-section {
+  background: #fafafa;
+  color: #424242;
+  padding-top: 58px !important; padding-bottom: 56px !important;
   margin: auto;
 }
 .client-section > .container {
@@ -273,6 +276,17 @@ nav .container-fluid a {
 
 
 /*intro header*/
+.intro {
+  width: 100%;
+  padding-top: 70px;
+  height: auto;
+  text-align: center;
+  background: #fafafa;
+  position: relative;
+  padding-bottom: 30px;
+  overflow: hidden;
+}
+
 .brand-heading {
   font-family: 'Roboto', sans-serif;
   font-size: 2.25em;
@@ -519,6 +533,8 @@ footer li {
   padding-bottom: 20px;
 }
 
+
+
 .logos-section .title-box {
   padding-top: 30px;
   border-top: solid 0.5px #cecece;
@@ -530,8 +546,8 @@ footer li {
   letter-spacing: 0.7px;
   text-align: center;
   color: #979797;
-
 }
+
 .logos-projects {
   display: flex;
   align-items: center;

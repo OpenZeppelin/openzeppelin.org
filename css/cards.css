@@ -1,3 +1,11 @@
+.card-section {
+  color: #424243;
+  background: linear-gradient(to bottom, #FAFAFA 0%,#FAFAFA 60%, #1a1a1a 60%,#1a1a1a 102%)!important;
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+  margin: 0 !important;
+}
+
 .new-card{
   background:white;
   width: calc(85% -15px);
