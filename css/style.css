@@ -105,25 +105,25 @@ html, body, #container, .thirdPage {
 }
 
 .augur {
-  background-image: url("/img/logos/augur.png");
+  background-image: url("../img/logos/augur.png");
 }
 .omise {
-  background-image: url("/img/logos/omisego.svg");
+  background-image: url("../img/logos/omisego.svg");
   position: relative;
   top: 3px;
   left: 8px;
 }
 .aragon {
-  background-image: url("/img/logos/Aragon.png");
+  background-image: url("../img/logos/Aragon.png");
 }
 .storj  {
-  background-image: url("/img/logos/storj.png");
+  background-image: url("../img/logos/storj.png");
 }
 .civic {
-  background-image: url("/img/logos/civic.png");
+  background-image: url("../img/logos/civic.png");
 }
 .tierion {
-  background-image: url("/img/logos/tierion.png");
+  background-image: url("../img/logos/tierion.png");
 }
 
 .clients-img.augur {
@@ -293,6 +293,7 @@ nav .container-fluid a {
   justify-content: center;
 }
 .fill-button {
+  min-width: 196px;
   font-family: 'Roboto Mono', monospace;
   text-transform: uppercase;
   letter-spacing: 1.2px;
@@ -303,6 +304,7 @@ nav .container-fluid a {
   color: white;
   padding: 1rem 3rem;
   margin: 0 10px;
+  box-shadow: 0 2px 8px rgba(50, 50, 93, .1), 0 2px 4px rgba(0, 0, 0, .07);
 }
 
 .fill-button:hover {
@@ -328,6 +330,7 @@ nav .container-fluid a {
   color: #5aa5ff;
   padding: 1rem 2rem;
   margin: 0 10px;
+  box-shadow: 0 2px 8px rgba(50, 50, 93, .1), 0 2px 4px rgba(0, 0, 0, .07);
 }
 
 .empty-button:hover {
@@ -341,7 +344,10 @@ nav .container-fluid a {
   padding: 1rem 2rem;
   margin: 0 10px;
 }
-
+@media (max-width: 767px) {
+  .buttons-div { flex-direction: column; }
+  .fill-button, .empty-button {margin: 10px 0;}
+}
 
 /*prefooter*/
 .pre-footer .content-section {
@@ -371,7 +377,6 @@ footer {
   color: white;
   font-size: 1em;
   font-weight: 400;
-  text-transform: uppercase;
   padding: 28px 20px 25px 20px;
   margin: auto;
   border-top: solid 1px #ffffff60;
@@ -425,10 +430,10 @@ footer li {
   border-right: solid 0px transparent; 
 }
 
-
 /*about*/
 #about {
   padding: 0 0 100px 0;
+  width: calc(100% - 30px);
 }
 
 #about h1 {
@@ -477,7 +482,7 @@ footer li {
 @media(max-width:768px) {
   #about .feature-card {
     text-align:center;
-    padding: 0;
+    padding: 0 !important;
   }
 }
 
@@ -496,9 +501,6 @@ footer li {
   padding-top: 54px !important;
   padding-bottom: 20px;
 }
-
-
-
 .logos-section .title-box {
   padding-top: 30px;
   border-top: solid 0.5px #cecece;
