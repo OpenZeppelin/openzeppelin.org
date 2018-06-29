@@ -73,7 +73,7 @@ div.row.services-items div {
 }
 
 @media (max-width: 767px) { /*Para monitores xs*/
-  .brand-heading {font-size: 30px!important;}
+  .brand-heading {font-size: 3rem !important;}
   .intro-text {font-size: 17px!important;}
   #customers h2 {font-size: 22px;}
   footer p {font-size: 12px;}
@@ -203,13 +203,13 @@ nav {
   height: 30px;
 }
 nav, nav .container-fluid, nav .container-fluid a {
-  height: 70px;
+  height: 60px;
 }
 nav .container-fluid a {
   display: flex; 
   align-items: center;
   font-family: 'Roboto', sans-serif;
-  font-weight: 500!important;
+  font-weight: 400!important;
   color: #1a1a1a;
 }
 @media(max-width:768px) {
@@ -275,24 +275,27 @@ nav .container-fluid a {
 /*intro header*/
 .brand-heading {
   font-family: 'Roboto', sans-serif;
-  font-size: 28px;
-  letter-spacing: 1.1px;
-  margin-top: 40px;
+  font-size: 2.25em;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+  margin-top: 4rem;
+  color: #1a1a1a;
 }
 .intro .subtitle {
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  font-size: 1.5em;
+  font-weight: 400 !important;
   line-height: 1.35;
   letter-spacing: 0.7px;
   font-weight: 400;
-  color: black;
-  max-width: 639px;
+  max-width: 80%;
   margin: auto;
+  margin-bottom: 2rem;
 }
 
 @media (min-width: 768px) { /*Para monitores sm md y lg*/
   .brand-heading {
-    margin-bottom: 30px!important;
+    margin-bottom: 2rem!important;
   }
   .intro-text {font-size: 18px!important;}
 }
@@ -309,22 +312,24 @@ nav .container-fluid a {
   font-family: 'Roboto Mono', monospace;
   text-transform: uppercase;
   letter-spacing: 1.2px;
-  font-size: 13px;
-  background: black;
-  border: solid 2px black;
+  font-size: 1em;
+  font-weight: bold;
+  background: #1a1a1a;
+  border: solid 1px #1a1a1a;
   color: white;
-  padding: 7px 23px;
+  padding: 1rem 2rem;
   margin: 0 10px;
 }
+
 .fill-button:hover, .empty-button {
-  background: transparent;
-  color: black;
   font-family: 'Roboto Mono', monospace;
   text-transform: uppercase;
   letter-spacing: 1.2px;
-  font-size: 13px;
-  border: solid 2px black;
-  padding: 7px 23px;
+  font-size: 1em;
+  font-weight: bold;
+  border: solid 1.5px #1a1a1a;
+  color: #1a1a1a;
+  padding: 1rem 2rem;
   margin: 0 10px;
 }
 
@@ -411,36 +416,41 @@ footer li {
 
 #about h1 {
   font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  font-size: 1.5em;
+  line-height: 1.4em;
+  font-weight: 400;
   letter-spacing: 1px;
   text-align: center;
   color: #1a1a1a;
   max-width: 639px;
   margin: auto;
-  margin-top: 30px;
+  margin-bottom: 3rem;
 }
 
 #about h3 {
   font-family: 'Roboto Mono', monospace;
-  font-size: 18px;
+  font-size: 1.25em;
   font-weight: 500;
   letter-spacing: 1px;
   color: #1a1a1a;
   text-transform: uppercase;
-  margin: 22px 0 15px;
+  margin: 2.5rem 0 1rem;
 }
 
 #about h2 {
   font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  line-height: 1.33;
+  font-size: 1.25em;
+  font-weight: 300;
+  line-height: 1.4;
   letter-spacing: 0.6px;
   color: #1a1a1a;
   min-height: 37px;
+  margin-bottom: 1.5rem;
 }
 
-#about p {
-  font-size: 12px;
+#about a {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.75em;
   font-weight: 500;
   letter-spacing: 0.5px;
   color: #5aa5ff;
@@ -458,6 +468,10 @@ footer li {
   padding-right: 57px;
 }
 
+#about img {
+  max-height: 40px;
+}
+
 /*Logos section*/
 .logos-section {
   background-color: #fafafa;
@@ -468,7 +482,7 @@ footer li {
 
 .logos-section .title-box {
   padding-top: 30px;
-  border-top: solid 1.5px #979797;
+  border-top: solid 0.5px #cecece;
 }
 .logos-section .title-box h1 {
   font-family: 'Roboto', sans-serif;
