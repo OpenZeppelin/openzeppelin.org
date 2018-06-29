@@ -1,9 +1,7 @@
 /* Bootstrap Overrides */
 a {
   color: #1F8DED;
-}
-a:hover {
-  text-decoration: none;
+  text-decoration: none!important;
 }
 .tbody.collapse.in {
   color: #8f8f8f;
