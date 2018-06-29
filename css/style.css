@@ -62,19 +62,20 @@ html, body, #container, .thirdPage {
 .clients-title {
   line-height: 1em;
   margin: 0 0 20px;
-  font-size: 33px;
+  font-size: 2.5em;
   font-family: 'Roboto Mono', monospace;
-  color: #000000;
-  font-weight: 400;
+  color: #1a1a1a;
+  font-weight: 600;
   text-transform: uppercase;
+  letter-spacing: 0px;
 }
 .clients-text {
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-size: 1.25em;
   line-height: 1.44;
   letter-spacing: 0.6px;
-  color: #000000;
-  font-weight: 400;
+  color: #1a1a1a;
+  font-weight: 300;
 }
 .clients-img-container {
   text-align: right;
@@ -470,7 +471,7 @@ footer li {
 
 #about a {
   font-family: 'Roboto Mono', monospace;
-  font-size: 0.75em;
+  font-size: 1em;
   font-weight: 500;
   letter-spacing: 0.5px;
   color: #5aa5ff;
@@ -496,7 +497,7 @@ footer li {
 .logos-section {
   background-color: #fafafa;
   color: #424242;
-  padding-top: 54px !important;
+  padding-top: 1rem !important;
   padding-bottom: 20px;
 }
 .logos-section .title-box {
@@ -510,6 +511,8 @@ footer li {
   letter-spacing: 0.7px;
   text-align: center;
   color: #979797;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
 }
 
 .logos-projects {
