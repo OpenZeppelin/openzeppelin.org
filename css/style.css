@@ -2,6 +2,9 @@
 a {
   color: #1F8DED;
 }
+a:hover {
+  text-decoration: none;
+}
 .tbody.collapse.in {
   color: #8f8f8f;
 }
@@ -12,20 +15,12 @@ a {
 .table > thead > tr > th {
   border-bottom: 2px solid #D4E1E6;
 }
-
 html, body, #container, .thirdPage {
-  font-family: 'Lato', Lucida Grande;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   max-width: 100%;
 }
-
-a:hover {
-  text-decoration: none;
-}
-
-input:focus::-webkit-input-placeholder {
-  color: transparent;
-}
+/*General*/
 .no-padding {
   padding: 0 !important;
 }
@@ -48,38 +43,6 @@ input:focus::-webkit-input-placeholder {
   text-align: center;
   color: #424242;
   font-weight: 500;
-}
-
-/*Services items*/
-
-div.row.services-items div {
-  text-align: left;
-}
-
-/*NPM INSTALL SIGN*/
-.npm-install {
-  font-size: 12px;
-  font-family: Menlo, Monaco, Lucida Console;
-  line-height: 20px;
-  margin: 0;
-  white-space: pre-wrap;
-  color: white;
-  text-align: left;
-  background-color: black;
-  border-radius:5px;
-  width: 448px;
-  margin: auto;
-  padding: 8px;
-}
-
-@media (max-width: 767px) { /*Para monitores xs*/
-  .brand-heading {font-size: 3rem !important;}
-  .intro-text {font-size: 17px!important;}
-  #customers h2 {font-size: 22px;}
-  footer p {font-size: 12px;}
-  .footer-col {text-align: center;}
-  .logoRuns {height: 80px!important;}
-  .valign-wrapper-logo {display: inline!important;}
 }
 
 /*clients logos*/
@@ -311,6 +274,7 @@ nav .container-fluid a {
 @media (min-width: 768px) { /*Para monitores sm md y lg*/
   .brand-heading {
     margin-bottom: 2rem!important;
+    font-size: 30px!important;
   }
   .intro-text {font-size: 18px!important;}
 }
@@ -558,7 +522,6 @@ footer li {
   height: 75px;
   width: auto!important;
 }
-
 
 @media (max-width: 767px) {
   .logos-projects {
