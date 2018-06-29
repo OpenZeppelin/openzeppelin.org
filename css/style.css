@@ -506,13 +506,13 @@ footer li {
 }
 .logos-section .title-box h1 {
   font-family: 'Roboto', sans-serif;
-  font-size: 1em;
+  font-size: 1.25em;
   font-weight: 400;
   letter-spacing: 0.7px;
   text-align: center;
   color: #979797;
-  margin-top: 0.5rem;
-  margin-bottom: 2rem;
+  margin-top: 0rem;
+  margin-bottom: 3rem;
 }
 
 .logos-projects {
