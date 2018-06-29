@@ -200,7 +200,7 @@ nav {
   align-items: center;
 }
 .navbar-header .navbar-brand img {
-  height: 30px;
+  height: 2.5rem;
 }
 nav, nav .container-fluid, nav .container-fluid a {
   height: 60px;
@@ -284,13 +284,14 @@ nav .container-fluid a {
 .intro .subtitle {
   font-family: 'Roboto', sans-serif;
   font-size: 1.5em;
-  font-weight: 400 !important;
-  line-height: 1.35;
-  letter-spacing: 0.7px;
+  line-height: 1.4em;
   font-weight: 400;
-  max-width: 80%;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #1a1a1a;
   margin: auto;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  max-width: 90%;
 }
 
 @media (min-width: 768px) { /*Para monitores sm md y lg*/
@@ -341,10 +342,16 @@ nav .container-fluid a {
   padding-bottom: 6rem;
 }
 .pre-footer p {
-  line-height: 25px;
-  letter-spacing: 1.2px;
-  font-size: 20px;
   font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+  line-height: 1.4em;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-align: center;
+  color: white;
+  margin: auto;
+  margin-bottom: 1.5rem;
+  max-width: 90%;
 }
 
 /*footer*/
@@ -364,10 +371,10 @@ footer {
 footer a {
   margin: 25px 25px;
   color: #ffffff;
-  opacity: 0.6;
+  opacity: 0.5;
   margin-right: 15px!important;
   margin-left: 0px!important;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 0.5px;
 }
 
