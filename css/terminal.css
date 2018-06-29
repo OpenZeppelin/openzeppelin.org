@@ -177,6 +177,7 @@
   text-align: left!important;
 }
 .type-wrap{
+  overflow: hidden;
   background-color: black;
   font-size: 12px;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
@@ -216,6 +217,7 @@
 }
 @media (max-width: 767px) { /*Para monitores xs*/
   .terminal {width: 300px!important;}
+  .terminal span {max-width: 300px!important;}
   .npm-install {width: 300px!important;}
   .vim-bottom-terminal {
     background-repeat: no-repeat;

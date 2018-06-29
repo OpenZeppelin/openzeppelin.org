@@ -26,6 +26,9 @@ a:hover {
 input:focus::-webkit-input-placeholder {
   color: transparent;
 }
+.no-padding {
+  padding: 0 !important;
+}
 
 /* Footer */
 
@@ -93,22 +96,21 @@ div.row.services-items div {
   margin-top: 25px;
 }
 .clients-title {
-  font-family: "Helvetica Neue",Lato,Helvetica,Arial,sans-serif;
-  color: rgb(66, 66, 66)!important;
-  font-weight: 600;
   line-height: 1em;
-  letter-spacing: 1px;
-  margin: 0 0 10px;
-  font-size: 35px;
+  margin: 0 0 20px;
+  font-size: 33px;
+  font-family: 'Roboto Mono', monospace;
+  color: #000000;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 .clients-text {
-  font-family: "Helvetica Neue",Lato,Helvetica,Arial,sans-serif;
-  letter-spacing: 0.04em;
-  color: #6f7c82;
-  font-size: 20px!important;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 1.6;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.44;
+  letter-spacing: 0.6px;
+  color: #000000;
+  font-weight: 400;
 }
 .clients-img-container {
   text-align: right;
@@ -135,6 +137,7 @@ div.row.services-items div {
   background-position: center;
   background-size: contain;
 }
+
 .augur {
   background-image: url("/img/logos/augur.png");
 }
@@ -453,4 +456,36 @@ footer li {
 
 #about .feature-card {
   padding-right: 57px;
+}
+
+/*Logos section*/
+.logos-section {
+  background-color: #fafafa;
+  color: #424242;
+  padding-top: 54px !important;
+  padding-bottom: 20px;
+}
+
+.logos-section .title-box {
+  padding-top: 30px;
+  border-top: solid 1.5px #979797;
+}
+.logos-section .title-box h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #979797;
+
+}
+.logos-projects {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logos-projects img{
+  height: 75px;
+  width: auto!important;
 }

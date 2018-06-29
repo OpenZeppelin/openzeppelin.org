@@ -90,25 +90,7 @@ a:hover, a:focus {
 .logoCreators img {
   max-width: 100%;
 }
-.logoRuns {
-  text-align: center;
-}
-.logoRuns img {
-  max-width: 100%;
-  width: 70%;
-/*  max-width: 300px;
-  padding: 0;*/
-}
-.client-section-pricing .logoCreators img {
-  width: 70%;
-  max-width: 300px;
-}
-.logos-pricing img {
-  margin-top: 21px;
-  width: 78%;
-  margin-bottom: -20px;
-  opacity: 0.8;
-}
+
 
 @media(max-width:768px) {
   .client-section .logos-projects {
@@ -373,7 +355,6 @@ p.services {
 }
 .client-section {
   background: #fafafa;
-  border: 1px solid #ecf0f2;
   color: #424242;
   padding-top: 58px !important; padding-bottom: 56px !important;
 }
@@ -401,11 +382,6 @@ p.services {
 }
 .meet-team {
   margin-bottom: 50px;
-}
-.team-section-h1 {
-  font-size: 15px!important;
-  margin-bottom: 15px!important;
-  font-weight: 400!important;
 }
 .meet-clients h1 {
   font-size: 15px;
