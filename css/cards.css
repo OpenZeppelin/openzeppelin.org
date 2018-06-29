@@ -97,3 +97,13 @@
   background-color: white;
   width: 100%!important;
 }
+
+
+@media (min-width: 760px) and (max-width: 1014px){ /*Para monitores md*/
+  .new-card { padding: 40px 10px 40px 0; }
+  .new-card .new-card-title, .new-card .new-card-text {font-size: 13px; }
+}
+@media (max-width: 760px) { /*Para monitores xs*/
+  .new-card { padding: 40px 10px 40px 0; }
+  .new-card .new-card-title, .new-card .new-card-text {font-size: 15px; }
+}
