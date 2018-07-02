@@ -438,8 +438,10 @@ footer li {
 
 /*about*/
 #about {
-  padding: 0 0 100px 0;
+  padding: 0 0 8rem 0;
   width: calc(100% - 30px);
+  margin-right: auto;
+  margin-left: auto;
 }
 
 #about h1 {
@@ -489,16 +491,6 @@ footer li {
   color: #166ed8;
 }
 
-@media(max-width:768px) {
-  #about .feature-card {
-    text-align:center;
-    padding: 0 !important;
-  }
-  #about .feature-card .box {
-    margin-bottom: 80px !important;
-  }
-}
-
 #about .feature-card .box{
   max-width: 333px;
   margin: auto;
@@ -506,6 +498,19 @@ footer li {
 
 #about img {
   max-height: 40px;
+}
+
+@media(max-width:768px) {
+  #about {
+    padding: 0 0 4rem 0;
+  }
+  #about .feature-card {
+    text-align:center;
+    padding: 0 !important;
+  }
+  #about .feature-card .box {
+    margin-bottom: 80px !important;
+  }
 }
 
 /*Logos section*/
