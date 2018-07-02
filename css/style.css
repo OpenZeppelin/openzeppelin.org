@@ -319,6 +319,13 @@ nav .container-fluid a {
   margin: 0 10px;
 }
 
+.fill-button:active, .fill-button:focus {
+  color: white !important;
+  outline: none!important;
+  border: solid 1.5px #166ed8;
+  background: #166ed8;
+}
+
 .empty-button {
   font-family: 'Roboto Mono', monospace;
   text-transform: uppercase;
@@ -477,16 +484,24 @@ footer li {
   color: #5aa5ff;
   text-transform: uppercase;
 }
+#about a:hover, #about a:focus, #about a:active {
+  outline: none;
+  color: #166ed8;
+}
 
 @media(max-width:768px) {
   #about .feature-card {
     text-align:center;
     padding: 0 !important;
   }
+  #about .feature-card .box {
+    margin-bottom: 80px !important;
+  }
 }
 
-#about .feature-card {
-  padding-right: 57px;
+#about .feature-card .box{
+  max-width: 333px;
+  margin: auto;
 }
 
 #about img {
