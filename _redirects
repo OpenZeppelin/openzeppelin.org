@@ -1,1 +1,2 @@
 /api/* https://openzeppelin-docs.netlify.com/api/:splat 200
+/api/ /api/index.html 200
