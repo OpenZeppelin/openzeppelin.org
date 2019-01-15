@@ -51,7 +51,7 @@
       $(function(){
         setTimeout(function(){
           $("#typed").typed({
-              strings: ['<br>[~]$ npm install openzeppelin-solidity' ],
+              strings: ['[~] $ npm install openzeppelin-solidity' ],
               typeSpeed: 5,
               backDelay: 500,
               loop: false,
@@ -59,7 +59,7 @@
               loopCount: false,
               callback: function(){ installing(); },
           });
-        }, 3000);
+        }, 1000);
       });
 
       function installing(){
@@ -89,14 +89,11 @@
       function fixedText1and2(){
         $('.terminal .typed-cursor').css("color", "black");
         setTimeout(function(){
-          document.getElementById('fixed-text').innerHTML = '</br> > openzeppelin-solidity@1.12.0 install';
+          document.getElementById('fixed-text').innerHTML = '</br> + openzeppelin-solidity@2.1.1</br>';
         }, 200);
         setTimeout(function(){
-          document.getElementById('fixed-text2').innerHTML = '</br> > scripts/install.sh</br>';
-        }, 400);
-        setTimeout(function(){
           $("#typed2").typed({
-              strings: ['[~]$ vim ExampleToken.sol^500' ],
+              strings: ['[~] $ vim ExampleToken.sol^500' ],
               typeSpeed: 5,
               backDelay: 500,
               loop: false,
@@ -126,7 +123,23 @@
 
         setTimeout(function(){
           $("#typed-vim").typed({
-            strings: ['<br>pragma solidity <span style="color: #FC1E70;">^^</span><span style="color: #AF7DFF;">0.4.24</span>;</br><span style="color: #FC1E70;">import</span> <span style="color: #E6DC6D;">"openzeppelin-solidity/contracts/token/<br /><span class="mobile-br">&nbsp;</span>StandardToken.sol"</span>;</br></br>contract ExampleToken is StandardToken {</br><span class="terminal-padding">  string public name <span style="color: #FC1E70;">=</span> <span style="color: #E6DC6D;">"ExampleToken"</span>; </br></span><span class="terminal-padding">   string public symbol <span style="color: #FC1E70;">=</span><span style="color: #E6DC6D;"> "EGT"</span>;</br></span><span class="terminal-padding"> uint public decimals <span style="color: #FC1E70;">= </span><span style="color: #AF7DFF;">18</span>;</br></span><span class="terminal-padding"> uint public INITIAL_SUPPLY <span style="color: #FC1E70;">=</span><br class="mobile-br"/><span class="mobile-br">&nbsp;</span><span style="color: #AF7DFF;"> 10000</span> * (<span style="color: #AF7DFF;">10</span> ** decimals)</span>;</br></span><br class="desktop-br" /><span class="terminal-padding"> <span style="color: #FC1E70;">constructor</span>() <span style="color: #FC1E70;">public</span> {</br></span><span class="terminal-padding2">  totalSupply_ <span style="color: #FC1E70;">=</span> INITIAL_SUPPLY;</br>  </span><span class="terminal-padding2">balances[msg.sender] <span style="color: #FC1E70;">=</span> INITIAL_SUPPLY;</br></span><span class="terminal-padding">   }^500</br>}' ],
+            strings: [
+              [
+                '<span style="color: #FC1E70;">pragma</span> solidity <span style="color: #FC1E70;">^^</span><span style="color: #AF7DFF;">0.5.0</span>;',
+                '<span style="color: #FC1E70;">import</span> <span style="color:#E6DC6D;">"openzeppelin-solidity/contracts/token/<br><span class="mobile-br">&nbsp;</span>ERC20/ERC20Detailed.sol"</span>;',
+                '',
+                '<span style="color: #FC1E70;">contract</span> <span style="color:#A5D3F9">ExampleToken</span> is <span style="color:#A5D3F9">ERC20</span>, <span style="color:#A5D3F9">ERC20Detailed</span> {',
+                '<span class="terminal-padding"><span style="color:#A5D3F9">uint</span> <span style="color:#FC1E70">private</span> DECIMALS <span style="color: #FC1E70;">= </span><span style="color: #AF7DFF;">18</span>;</span>',
+                '<span class="terminal-padding"><span style="color:#A5D3F9">uint</span> <span style="color:#FC1E70">private</span> INITIAL_SUPPLY <span style="color: #FC1E70;">=</span><br class="mobile-br"/><span class="mobile-br">&nbsp;</span><span style="color: #AF7DFF;"> 10000</span> * (<span style="color: #AF7DFF;">10</span> ** decimals)</span>;</span>',
+                '',
+                '<span class="terminal-padding"><span style="color: #FC1E70;">constructor</span> () <span style="color: #FC1E70;">public</span>',
+                '<span class="terminal-padding2"><span style="color:#A5D3F9">ERC20Detailed</span>(<span style="color:#E6DC6D;">"ExampleToken"</span>, <span style="color:#E6DC6D;">"EGT"</span>, DECIMALS)</span>',
+                '<span class="terminal-padding">{</span>',
+                '<span class="terminal-padding2">_mint(msg.sender, INITIAL_SUPPLY);</span>',
+                '<span class="terminal-padding">}^500',
+                '}'
+              ].join('<br>')
+            ],
             typeSpeed: 0,
             backDelay: 500,
             loop: false,
@@ -140,7 +153,7 @@
         $('.terminal .typed-cursor').css("color", "black");
         setTimeout(function(){
           $("#typed3").typed({
-            strings: ['<br>[~]$ truffle console^500</br>> var myToken = ExampleToken.deployed();^500</br>> myToken.totalSupply()' ],
+            strings: ['<br>[~] $ truffle console^500</br>> const myToken = await ExampleToken.new();^500</br>> myToken.totalSupply()' ],
             typeSpeed: 5,
             backDelay: 500,
             loop: false,
