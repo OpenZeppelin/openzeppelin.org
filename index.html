@@ -126,13 +126,12 @@
             strings: [
               [
                 '<span style="color: #FC1E70;">pragma</span> solidity <span style="color: #FC1E70;">^^</span><span style="color: #AF7DFF;">0.5.0</span>;',
+                '<div style="height:8px"></div><span style="color: #FC1E70;">import</span> <span style="color:#E6DC6D;">"openzeppelin-solidity/contracts/token/<br><span class="mobile-br">&nbsp;</span>ERC20/ERC20.sol"</span>;',
                 '<span style="color: #FC1E70;">import</span> <span style="color:#E6DC6D;">"openzeppelin-solidity/contracts/token/<br><span class="mobile-br">&nbsp;</span>ERC20/ERC20Detailed.sol"</span>;',
-                '',
-                '<span style="color: #FC1E70;">contract</span> <span style="color:#A5D3F9">ExampleToken</span> is <span style="color:#A5D3F9">ERC20</span>, <span style="color:#A5D3F9">ERC20Detailed</span> {',
+                '<div style="height:8px"></div><span style="color: #FC1E70;">contract</span> <span style="color:#A5D3F9">ExampleToken</span> is <span style="color:#A5D3F9">ERC20</span>, <span style="color:#A5D3F9">ERC20Detailed</span> {',
                 '<span class="terminal-padding"><span style="color:#A5D3F9">uint</span> <span style="color:#FC1E70">private</span> DECIMALS <span style="color: #FC1E70;">= </span><span style="color: #AF7DFF;">18</span>;</span>',
-                '<span class="terminal-padding"><span style="color:#A5D3F9">uint</span> <span style="color:#FC1E70">private</span> INITIAL_SUPPLY <span style="color: #FC1E70;">=</span><br class="mobile-br"/><span class="mobile-br">&nbsp;</span><span style="color: #AF7DFF;"> 10000</span> * (<span style="color: #AF7DFF;">10</span> ** decimals)</span>;</span>',
-                '',
-                '<span class="terminal-padding"><span style="color: #FC1E70;">constructor</span> () <span style="color: #FC1E70;">public</span>',
+                '<span class="terminal-padding"><span style="color:#A5D3F9">uint</span> <span style="color:#FC1E70">private</span> INITIAL_SUPPLY <span style="color: #FC1E70;">=</span><br class="mobile-br"/><span class="mobile-br">&nbsp;</span><span style="color: #AF7DFF;"> 10000</span> * (<span style="color: #AF7DFF;">10</span> ** DECIMALS)</span>;</span>',
+                '<div style="height:8px"></div><span class="terminal-padding"><span style="color: #FC1E70;">constructor</span> () <span style="color: #FC1E70;">public</span>',
                 '<span class="terminal-padding2"><span style="color:#A5D3F9">ERC20Detailed</span>(<span style="color:#E6DC6D;">"ExampleToken"</span>, <span style="color:#E6DC6D;">"EGT"</span>, DECIMALS)</span>',
                 '<span class="terminal-padding">{</span>',
                 '<span class="terminal-padding2">_mint(msg.sender, INITIAL_SUPPLY);</span>',
