@@ -182,22 +182,22 @@
   background-color: black;
   font-size: 12px;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
-  line-height: 20px;
+  line-height: 19px;
   margin: 0;
   font-weight: 100;
   white-space: nowrap;
   color: white;
   text-align: left;
   margin-left: 13px;
-  padding-top: 20px;
+  padding-top: 35px;
 }
 .terminal-padding{
-  margin-left: 2px;
-  padding-left: 2px;
+  margin-left: 10px;
+  padding-left: 10px;
 }
 .terminal-padding2{
-  margin-left: 4px;
-  padding-left: 4px;
+  margin-left: 20px;
+  padding-left: 20px;
 }
 .typed-cursor{
   opacity: 1;
