@@ -54,13 +54,13 @@
 @media(max-width:768px) {
   .new-card div p {margin: 0px;}
   .new-card {width: 100%!important;margin-bottom: 15px; padding-right: 10px;}
-  .slack-card {margin-left: 0%!important;}
+  .discourse-card {margin-left: 0%!important;}
   .mail-card {margin-right: 0%!important;} 
 }
 .mail-card{
   margin-right: calc(15% + 15px);
 }
-.slack-card{
+.discourse-card{
   margin-left: calc(15% + 15px);
 }
 .new-card .new-card-title {
