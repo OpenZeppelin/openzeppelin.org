@@ -1,4 +1,6 @@
 *.swp
 *.swo
 .DS_Store
-
+Gemfile.lock
+.bundle
+_site
