@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/*"
+  to = "https://openzeppelin.com/contracts"
+  status = 301
